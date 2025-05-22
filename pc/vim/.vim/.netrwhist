@@ -1,0 +1,12 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =7
+let g:netrw_dirhist_7='/etc/sddm.conf.d'
+let g:netrw_dirhist_6='/var/lib/systemd/coredump'
+let g:netrw_dirhist_5='/home/rambile/.config'
+let g:netrw_dirhist_4='/home/rambile/.config/fastfetch'
+let g:netrw_dirhist_3='/home/rambile/.config/waybar/cfgs/alpha'
+let g:netrw_dirhist_2='/home/rambile/.config/wofi'
+let g:netrw_dirhist_1='/home/rambile/.local/share/applications'
+let g:netrw_dirhist_0='/run/user/1000/hypr/0bd541f2fd902dbfa04c3ea2ccf679395e316887_1734793748_1176772357'
+let g:netrw_dirhist_9='/mnt/f/osu_collections_download'
+let g:netrw_dirhist_8='/home/rambile/.config/wlogout'
