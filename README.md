@@ -14,3 +14,6 @@ rofi-wayland or other launcher idk
 
 # folder navigation
 Folders that are not "global" are more like an archive
+
+# todo
+config for wlogout, separate hyprland config into different files, maybe add a script that'll autoinstall everything i need
