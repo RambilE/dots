@@ -1,0 +1,12 @@
+orientation=horizontal
+hide_scroll=true
+image_size=13
+width=1920
+height=24
+allow_images=true
+matching=contains
+insensitive=true
+allow_images=true
+location=top
+y=-24
+no_actions=true

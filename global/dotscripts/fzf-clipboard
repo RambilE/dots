@@ -1,0 +1,1 @@
+kitten panel --lines=4 --focus-policy exclusive sh -c "cliphist list | fzf --no-sort --info=hidden --no-separator --prompt="clipboard: " | cliphist decode | wl-copy"

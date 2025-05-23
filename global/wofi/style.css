@@ -1,0 +1,24 @@
+* {
+    font-family: "0xProto Nerd Font";
+    font-size: 14px
+    color: #cdd6f4;
+    text-shadow: 1px 1px 2px;
+    box-shadow: unset;
+    border: unset;
+    padding: unset;
+    min-height: unset;
+    border-radius: unset;
+}
+
+#window {
+    background-color: #1e1e2e;
+}
+
+#entry {
+    margin: 0px 1px 0px 1px;
+    padding: 3px;
+}
+
+#entry:selected {
+    background-color: #313244;
+}

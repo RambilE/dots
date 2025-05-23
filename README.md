@@ -12,3 +12,5 @@ wofi
 ranger (coming soom trademark)
 rofi-wayland or other launcher idk
 
+# folder navigation
+Folders that are not "global" are more like an archive
