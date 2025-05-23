@@ -1,0 +1,118 @@
+// -*- mode: jsonc -*-
+{
+    "layer": "top", // Waybar at top layer
+    // "position": "bottom", // Waybar position (top|bottom|left|right)
+    "height": 20, // Waybar height (to be removed for auto height)
+    "spacing": 4, // Gaps between modules (4px)
+    "reload_style_on_change": true,
+    "modules-left": [
+        "hyprland/workspaces",
+        "hyprland/window",
+    ],
+    "modules-center": [
+        "clock"
+    ],
+    "modules-right": [
+        "memory",
+        "wireplumber",
+        "power-profiles-daemon",
+        "hyprland/language",
+        "battery",
+        "tray",
+    ],
+    
+    // Modules configuration
+   
+    "hyprland/window": {
+       "format": "{title}",
+       "tooltip": false,
+    },
+    "hyprland/language": {
+       "format-en": "en",
+       "format-ru": "ru",
+    }, 
+    "idle_inhibitor": {
+        "format": "{icon}",
+        "format-icons": {
+            "activated": "",
+            "deactivated": ""
+        }
+    },
+    "tray": {
+        "spacing": 10
+    },
+    "clock": {
+        "locale": "en_GB.UTF-8",
+        "tooltip-format": "<tt><small>{calendar}</small></tt>",
+        "calendar": {
+          "mode"          : "year",
+          "mode-mon-col"  : 3,
+          "weeks-pos"     : "right",
+          "on-scroll"     : 1,
+          "on-click-right": "mode",
+             "format": {
+             "months":     "<span color='#ffead3'><b>{}</b></span>",
+             "days":       "<span color='#ecc6d9'><b>{}</b></span>",
+             "weeks":      "<span color='#99ffdd'><b>W{}</b></span>",
+             "weekdays":   "<span color='#ffcc66'><b>{}</b></span>",
+             "today":      "<span color='#ff6699'><b><u>{}</u></b></span>"
+		    }
+	     },
+        "format-alt": "{:%d/%m/%Y}",
+        "actions": {
+		      "on-click-right": "mode",
+		      "on-click-forward": "tz_up",
+		      "on-click-backward": "tz_down",
+		      "on-scroll-up": "shift_up",
+		      "on-scroll-down": "shift_down"
+	     },
+    },
+    "memory": {
+        "format": "{used} GiB/{total} GiB",
+        "tooltip": false,
+        "interval": 5
+    },
+    "battery": {
+        "states": {
+            "warning": 30,
+            "critical": 15
+        },
+        "format": "{capacity}% {icon}",
+        "format-full": "{capacity}%+ 󱐥",
+        "format-charging": "{capacity}% 󱐥",
+        "format-plugged": "{capacity}% 󱐥",
+        "format-alt": "{time} {icon}",
+        "format-icons": [" ", " ", " ", " ", " "],
+        "interval": 5,
+    },
+    "power-profiles-daemon": {
+      "format": "{icon}",
+      "tooltip-format": "Power profile: {profile}",
+      "tooltip": true,
+      "format-icons": {
+        "default": "󰓅",
+        "performance": "󰓅",
+        "balanced": "󰾅",
+        "power-saver": "󰾆"
+      }
+    },
+    "cpu": {
+	     "interval": 3,
+	     "format": "{icon0}{icon1}{icon2}{icon3}{usage:>2}%",
+	     "format-icons": ["▁", "▂", "▃", "▄", "▅", "▆", "▇", "█"],
+    },
+    "network": {
+        "format-wifi": "󰞉 ({signalStrength}%)",
+        "format-ethernet": "{ipaddr}/{cidr} ",
+        "tooltip-format": "{ifname} via {gwaddr} ",
+        "format-linked": "{ifname} (No IP) ",
+        "format-disconnected": "󱞐 DCed",
+        "format-alt": "{ifname}: {ipaddr}/{cidr}"
+    },
+    "wireplumber": {
+       "format": "{volume}%",
+       "format-muted": "",
+    } 
+		}
+    }
+}
