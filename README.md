@@ -3,6 +3,8 @@ Configs for different thing because i can
 
 This repository consists of my created dots from my pc and laptop and has them separated in different directories, and a global one
 
+Those that are not global (pc and laptop) are for archival purposes
+
 # list of software to use this with
 vim
 hyprland

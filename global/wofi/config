@@ -1,12 +1,12 @@
 orientation=horizontal
 hide_scroll=true
-image_size=13
+image_size=12
 width=1920
-height=24
+height=20
 allow_images=true
 matching=contains
 insensitive=true
 allow_images=true
 location=top
-y=-24
+y=-20
 no_actions=true
