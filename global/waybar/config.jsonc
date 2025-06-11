@@ -4,6 +4,7 @@
     "height": 20, // min 24
     "spacing": 4, // Gaps between modules (4px)
     "reload_style_on_change": true,
+    "fixed-center": true,
     "modules-left": [
         "hyprland/workspaces",
         "hyprland/window",
@@ -17,7 +18,11 @@
         "mpris",
         "wireplumber",
         "hyprland/language",
-        "battery",
+        
+        /* niri/language, */
+        /* power-profiles-daemon,  */
+        /* battery, */
+
         "tray",
     ],
     
@@ -51,6 +56,8 @@
     },
     "clock": {
         "locale": "en_GB.UTF-8",
+        "format": "{:%H:%M | %d %b, %Y}",
+        "interval": 1, 
         "tooltip-format": "<tt><small>{calendar}</small></tt>",
         "calendar": {
           "mode"          : "year",
@@ -112,6 +119,7 @@
     "wireplumber": {
        "format": "{volume}%",
        "format-muted": "",
+       "scroll-step": 5,
        "on-click": "pavucontrol",
     },
     "mpris": {

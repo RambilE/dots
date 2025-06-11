@@ -43,7 +43,6 @@ button:hover {
     background-color: @flamingo;
 }
 
-#clock,
 #battery,
 #power-profiles-daemon,
 #cpu,
@@ -65,7 +64,7 @@ button:hover {
 
 tooltip-label, tooltip {
     background: @base;
-    border: 0;
+    border-radius: 10px;
 }
 
 #battery.charging, #battery.plugged {
