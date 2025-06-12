@@ -1,7 +1,7 @@
 // -*- mode: jsonc -*-
 {
     "layer": "top",
-    "height": 20, // min 24
+    "height": 20,
     "spacing": 4, // Gaps between modules (4px)
     "reload_style_on_change": true,
     "fixed-center": true,
