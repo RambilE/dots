@@ -1,6 +1,6 @@
 @import "mocha.css";
 * {
-    all: initial;
+
     font-family: "0xProto Nerd Font";
     font-size: 14px;
     color: @text;
@@ -8,11 +8,13 @@
 }
 
 window#waybar {
+    all: initial;
     padding: 0;
     background-color: @base;
 }
 
 button {
+    all: initial;
     padding: 0;
     box-shadow: inset 0 -3px transparent;
     border: none;
@@ -25,6 +27,7 @@ button:hover {
 }
 
 #workspaces button {
+    all: initial;
     padding: 0 6px;
     background-color: @surface0;
     color: @text;
@@ -32,6 +35,7 @@ button:hover {
 
 #workspaces button:hover {
     background-color: @surface1;
+    box-shadow: inset 0 -2px @flamingo;
 }
 
 #workspaces button.active {
