@@ -1,9 +1,7 @@
 # dots
-Configs for different thing because i can
+Configs for different things because i can
 
 This repository consists of my created dots from my pc and laptop and has them separated in different directories, and a global one
-
-Those that are not global (pc and laptop) are for archival purposes
 
 # list of software to use this with
 vim
@@ -18,4 +16,4 @@ rofi-wayland or other launcher idk
 Folders that are not "global" are more like an archive
 
 # todo
-config for wlogout, separate hyprland config into different files, maybe add a script that'll autoinstall everything i need
+autoinstall script
