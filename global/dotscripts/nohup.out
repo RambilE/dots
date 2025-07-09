@@ -1,0 +1,800 @@
+
+(com.dec05eba.gpu_screen_recorder:224626): libayatana-appindicator-WARNING **: 20:47:12.567: libayatana-appindicator is deprecated. Please use libayatana-appindicator-glib in newly written code.
+
+(com.dec05eba.gpu_screen_recorder:225247): libayatana-appindicator-WARNING **: 20:47:24.178: libayatana-appindicator is deprecated. Please use libayatana-appindicator-glib in newly written code.
+
+(com.dec05eba.gpu_screen_recorder:231873): libayatana-appindicator-WARNING **: 20:49:35.553: libayatana-appindicator is deprecated. Please use libayatana-appindicator-glib in newly written code.
+info: running command: gpu-screen-recorder -w HDMI-A-1 -c mp4 -k h264 -ac opus -f 60 -cursor yes -restore-portal-session yes -cr limited -encoder gpu -o /home/rambile/Videos/Video_2025-07-09_20-49-40.mp4 -q very_high -a device:default_output
+gsr info: gsr_kms_client_init: setting up connection to /usr/bin/gsr-kms-server
+gsr info: gsr_kms_client_init: waiting for server to connect
+kms server info: connecting to the client
+gsr info: gsr_kms_client_init: server connected
+gsr info: replacing file-backed unix domain socket with socketpair
+kms server info: connected to the client
+gsr info: using socketpair
+[h264_vaapi @ 0x563d8bf4ab80] ignoring invalid SAR: 0/0
+update fps: 58, damage fps: 58
+update fps: 60, damage fps: 60
+update fps: 61, damage fps: 61
+Paused
+update fps: 58, damage fps: 58
+update fps: 50, damage fps: 50
+update fps: 50, damage fps: 50
+update fps: 50, damage fps: 50
+Unpaused
+update fps: 51, damage fps: 51
+update fps: 60, damage fps: 60
+update fps: 60, damage fps: 60
+Notification: title: GPU Screen Recorder, body: The recording was saved to /home/rambile/Videos/Video_2025-07-09_20-49-40.mp4
+info: running command: gpu-screen-recorder -w HDMI-A-1 -c mp4 -k h264 -ac opus -f 60 -cursor yes -restore-portal-session yes -cr limited -encoder gpu -o /home/rambile/Videos/Video_2025-07-09_20-50-22.mp4 -q very_high -a device:default_output
+gsr info: gsr_kms_client_init: setting up connection to /usr/bin/gsr-kms-server
+gsr info: gsr_kms_client_init: waiting for server to connect
+kms server info: connecting to the client
+gsr info: gsr_kms_client_init: server connected
+gsr info: replacing file-backed unix domain socket with socketpair
+kms server info: connected to the client
+gsr info: using socketpair
+[h264_vaapi @ 0x55a9de5809c0] ignoring invalid SAR: 0/0
+update fps: 58, damage fps: 58
+Notification: title: GPU Screen Recorder, body: The recording was saved to /home/rambile/Videos/Video_2025-07-09_20-50-22.mp4
+info: running command: gpu-screen-recorder -w HDMI-A-1 -c mp4 -k h264 -ac opus -f 60 -cursor yes -restore-portal-session yes -cr limited -encoder gpu -o /home/rambile/Videos/Video_2025-07-09_20-51-05.mp4 -q very_high -a device:default_output
+gsr info: gsr_kms_client_init: setting up connection to /usr/bin/gsr-kms-server
+gsr info: gsr_kms_client_init: waiting for server to connect
+kms server info: connecting to the client
+gsr info: gsr_kms_client_init: server connected
+gsr info: replacing file-backed unix domain socket with socketpair
+kms server info: connected to the client
+gsr info: using socketpair
+[h264_vaapi @ 0x5633dee8fb80] ignoring invalid SAR: 0/0
+update fps: 58, damage fps: 58
+update fps: 61, damage fps: 61
+Notification: title: GPU Screen Recorder, body: The recording was saved to /home/rambile/Videos/Video_2025-07-09_20-51-05.mp4
+
+(com.dec05eba.gpu_screen_recorder:254223): libayatana-appindicator-WARNING **: 20:56:43.268: libayatana-appindicator is deprecated. Please use libayatana-appindicator-glib in newly written code.
+info: running command: gpu-screen-recorder -w portal -c mp4 -k h264 -ac opus -f 60 -cursor yes -restore-portal-session yes -cr limited -encoder gpu -o /home/rambile/Videos/Video_2025-07-09_20-56-53.mp4 -q very_high -a device:default_output
+gsr info: gsr_capture_portal_get_restore_token_from_cache: no restore token found in cache or failed to load (/home/rambile/.config/gpu-screen-recorder/restore_token)
+gsr info: gsr_capture_portal_setup_dbus: CreateSession
+gsr info: gsr_capture_portal_setup_dbus: SelectSources
+gsr info: gsr_capture_portal_setup_dbus: Start
+gsr info: gsr_capture_portal_save_restore_token: saved restore token to cache ()
+gsr info: gsr_capture_portal_setup_dbus: OpenPipeWireRemote
+gsr info: gsr_capture_portal_setup_dbus: desktop portal setup finished
+gsr info: gsr_capture_portal_setup: setting up pipewire
+gsr info: pipewire: server version: 1.4.5
+gsr info: pipewire: library version: 1.4.5
+gsr info: pipewire: header version: 1.4.5
+gsr info: pipewire: stream 0x558f9ee63990 previous state: "unconnected", new state: "connecting" (error: none)
+gsr info: gsr_capture_portal_setup: pipewire setup finished
+gsr info: gsr_capture_portal_start: waiting for pipewire negotiation
+gsr info: pipewire: stream 0x558f9ee63990 previous state: "connecting", new state: "paused" (error: none)
+gsr info: pipewire: negotiated format:
+gsr info: pipewire:    Format: 8 (Spa:Enum:VideoFormat:BGRx)
+gsr info: pipewire:    Modifier: 0x0
+gsr info: pipewire:    Size: 1920x1080
+gsr info: pipewire:    Framerate: 0/1
+gsr info: pipewire: negotiated format:
+gsr info: pipewire:    Format: 8 (Spa:Enum:VideoFormat:BGRx)
+gsr info: pipewire:    Modifier: 0xffffffffffffff
+gsr info: pipewire:    Size: 1920x1080
+gsr info: pipewire:    Framerate: 0/1
+gsr info: pipewire: stream 0x558f9ee63990 previous state: "paused", new state: "streaming" (error: none)
+gsr info: gsr_capture_portal_start: pipewire negotiation finished
+[h264_vaapi @ 0x558f9edfbac0] ignoring invalid SAR: 0/0
+update fps: 58, damage fps: 58
+update fps: 61, damage fps: 61
+update fps: 61, damage fps: 61
+update fps: 60, damage fps: 60
+update fps: 60, damage fps: 60
+update fps: 61, damage fps: 61
+gsr info: pipewire: stream 0x558f9ee63990 previous state: "streaming", new state: "paused" (error: none)
+gsr info: pipewire: stream 0x558f9ee63990 previous state: "paused", new state: "unconnected" (error: none)
+Notification: title: GPU Screen Recorder, body: The recording was saved to /home/rambile/Videos/Video_2025-07-09_20-56-53.mp4
+info: running command: gpu-screen-recorder -w portal -c mp4 -k h264 -ac opus -f 60 -cursor yes -restore-portal-session yes -cr limited -encoder gpu -o /home/rambile/Videos/Video_2025-07-09_20-57-13.mp4 -q very_high -a device:default_output
+gsr info: gsr_capture_portal_get_restore_token_from_cache: read cached restore token ()
+gsr info: gsr_capture_portal_setup_dbus: CreateSession
+gsr info: gsr_capture_portal_setup_dbus: SelectSources
+gsr error: gsr_capture_portal_setup_dbus: SelectSources failed
+gsr error: gsr_capture_portal_setup: desktop portal capture failed. It seems like desktop portal capture was canceled by the user.
+gsr error: gsr_capture_start failed
+info: running command: gpu-screen-recorder -w portal -c mp4 -k h264 -ac opus -f 60 -cursor yes -restore-portal-session yes -cr limited -encoder gpu -o /home/rambile/Videos/Video_2025-07-09_20-57-17.mp4 -q very_high -a device:default_output
+gsr info: gsr_capture_portal_get_restore_token_from_cache: read cached restore token ()
+gsr info: gsr_capture_portal_setup_dbus: CreateSession
+gsr info: gsr_capture_portal_setup_dbus: SelectSources
+gsr error: gsr_capture_portal_setup_dbus: SelectSources failed
+gsr error: gsr_capture_portal_setup: desktop portal capture failed. It seems like desktop portal capture was canceled by the user.
+gsr error: gsr_capture_start failed
+info: running command: gpu-screen-recorder -w portal -c mp4 -k h264 -ac opus -f 60 -cursor yes -restore-portal-session yes -cr limited -encoder gpu -o /home/rambile/Videos/Video_2025-07-09_20-57-20.mp4 -q very_high -a device:default_output
+gsr info: gsr_capture_portal_get_restore_token_from_cache: read cached restore token ()
+gsr info: gsr_capture_portal_setup_dbus: CreateSession
+gsr info: gsr_capture_portal_setup_dbus: SelectSources
+gsr info: gsr_capture_portal_setup_dbus: Start
+gsr info: gsr_capture_portal_save_restore_token: saved restore token to cache ()
+gsr info: gsr_capture_portal_setup_dbus: OpenPipeWireRemote
+gsr info: gsr_capture_portal_setup_dbus: desktop portal setup finished
+gsr info: gsr_capture_portal_setup: setting up pipewire
+gsr info: pipewire: server version: 1.4.5
+gsr info: pipewire: library version: 1.4.5
+gsr info: pipewire: header version: 1.4.5
+gsr info: pipewire: stream 0x55f0e0d5bc70 previous state: "unconnected", new state: "connecting" (error: none)
+gsr info: gsr_capture_portal_setup: pipewire setup finished
+gsr info: gsr_capture_portal_start: waiting for pipewire negotiation
+gsr info: pipewire: stream 0x55f0e0d5bc70 previous state: "connecting", new state: "paused" (error: none)
+gsr info: pipewire: negotiated format:
+gsr info: pipewire:    Format: 8 (Spa:Enum:VideoFormat:BGRx)
+gsr info: pipewire:    Modifier: 0x0
+gsr info: pipewire:    Size: 1920x1080
+gsr info: pipewire:    Framerate: 0/1
+gsr info: pipewire: negotiated format:
+gsr info: pipewire:    Format: 8 (Spa:Enum:VideoFormat:BGRx)
+gsr info: pipewire:    Modifier: 0xffffffffffffff
+gsr info: pipewire:    Size: 1920x1080
+gsr info: pipewire:    Framerate: 0/1
+gsr info: pipewire: stream 0x55f0e0d5bc70 previous state: "paused", new state: "streaming" (error: none)
+gsr info: gsr_capture_portal_start: pipewire negotiation finished
+[h264_vaapi @ 0x55f0e0cf3ac0] ignoring invalid SAR: 0/0
+update fps: 58, damage fps: 58
+gsr info: pipewire: stream 0x55f0e0d5bc70 previous state: "streaming", new state: "paused" (error: none)
+gsr info: pipewire: stream 0x55f0e0d5bc70 previous state: "paused", new state: "unconnected" (error: none)
+Notification: title: GPU Screen Recorder, body: The recording was saved to /home/rambile/Videos/Video_2025-07-09_20-57-20.mp4
+info: running command: gpu-screen-recorder -w portal -c mp4 -k h264 -ac opus -f 60 -cursor yes -restore-portal-session yes -cr limited -encoder gpu -o /home/rambile/Videos/Video_2025-07-09_20-59-55.mp4 -q very_high -a device:default_output
+gsr info: gsr_capture_portal_get_restore_token_from_cache: read cached restore token ()
+gsr info: gsr_capture_portal_setup_dbus: CreateSession
+gsr info: gsr_capture_portal_setup_dbus: SelectSources
+gsr info: gsr_capture_portal_setup_dbus: Start
+gsr info: gsr_capture_portal_save_restore_token: saved restore token to cache ()
+gsr info: gsr_capture_portal_setup_dbus: OpenPipeWireRemote
+gsr info: gsr_capture_portal_setup_dbus: desktop portal setup finished
+gsr info: gsr_capture_portal_setup: setting up pipewire
+gsr info: pipewire: server version: 1.4.5
+gsr info: pipewire: library version: 1.4.5
+gsr info: pipewire: header version: 1.4.5
+gsr info: pipewire: stream 0x55d00d815b20 previous state: "unconnected", new state: "connecting" (error: none)
+gsr info: gsr_capture_portal_setup: pipewire setup finished
+gsr info: gsr_capture_portal_start: waiting for pipewire negotiation
+gsr info: pipewire: stream 0x55d00d815b20 previous state: "connecting", new state: "paused" (error: none)
+gsr info: pipewire: negotiated format:
+gsr info: pipewire:    Format: 8 (Spa:Enum:VideoFormat:BGRx)
+gsr info: pipewire:    Modifier: 0x0
+gsr info: pipewire:    Size: 1920x1080
+gsr info: pipewire:    Framerate: 0/1
+gsr info: pipewire: negotiated format:
+gsr info: pipewire:    Format: 8 (Spa:Enum:VideoFormat:BGRx)
+gsr info: pipewire:    Modifier: 0xffffffffffffff
+gsr info: pipewire:    Size: 1920x1080
+gsr info: pipewire:    Framerate: 0/1
+gsr info: pipewire: stream 0x55d00d815b20 previous state: "paused", new state: "streaming" (error: none)
+gsr info: gsr_capture_portal_start: pipewire negotiation finished
+[h264_vaapi @ 0x55d00d7adb00] ignoring invalid SAR: 0/0
+update fps: 58, damage fps: 58
+update fps: 60, damage fps: 60
+Paused
+update fps: 54, damage fps: 54
+update fps: 50, damage fps: 50
+update fps: 50, damage fps: 50
+update fps: 50, damage fps: 50
+gsr info: pipewire: stream 0x55d00d815b20 previous state: "streaming", new state: "paused" (error: none)
+gsr info: pipewire: stream 0x55d00d815b20 previous state: "paused", new state: "unconnected" (error: none)
+Notification: title: GPU Screen Recorder, body: The recording was saved to /home/rambile/Videos/Video_2025-07-09_20-59-55.mp4
+
+(com.dec05eba.gpu_screen_recorder:282582): libayatana-appindicator-WARNING **: 21:03:07.414: libayatana-appindicator is deprecated. Please use libayatana-appindicator-glib in newly written code.
+info: running command: gpu-screen-recorder -w portal -c mp4 -k h264 -ac opus -f 60 -cursor yes -restore-portal-session yes -cr limited -r 30 -encoder gpu -o /home/rambile/Videos -q very_high -a device:default_output
+gsr info: gsr_capture_portal_get_restore_token_from_cache: read cached restore token ()
+gsr info: gsr_capture_portal_setup_dbus: CreateSession
+gsr info: gsr_capture_portal_setup_dbus: SelectSources
+gsr info: gsr_capture_portal_setup_dbus: Start
+gsr info: gsr_capture_portal_save_restore_token: saved restore token to cache ()
+gsr info: gsr_capture_portal_setup_dbus: OpenPipeWireRemote
+gsr info: gsr_capture_portal_setup_dbus: desktop portal setup finished
+gsr info: gsr_capture_portal_setup: setting up pipewire
+gsr info: pipewire: server version: 1.4.5
+gsr info: pipewire: library version: 1.4.5
+gsr info: pipewire: header version: 1.4.5
+gsr info: pipewire: stream 0x55d837908f40 previous state: "unconnected", new state: "connecting" (error: none)
+gsr info: gsr_capture_portal_setup: pipewire setup finished
+gsr info: gsr_capture_portal_start: waiting for pipewire negotiation
+gsr info: pipewire: stream 0x55d837908f40 previous state: "connecting", new state: "paused" (error: none)
+gsr info: pipewire: negotiated format:
+gsr info: pipewire:    Format: 8 (Spa:Enum:VideoFormat:BGRx)
+gsr info: pipewire:    Modifier: 0x0
+gsr info: pipewire:    Size: 1920x1080
+gsr info: pipewire:    Framerate: 0/1
+gsr info: pipewire: negotiated format:
+gsr info: pipewire:    Format: 8 (Spa:Enum:VideoFormat:BGRx)
+gsr info: pipewire:    Modifier: 0xffffffffffffff
+gsr info: pipewire:    Size: 1920x1080
+gsr info: pipewire:    Framerate: 0/1
+gsr info: pipewire: stream 0x55d837908f40 previous state: "paused", new state: "streaming" (error: none)
+gsr info: gsr_capture_portal_start: pipewire negotiation finished
+[h264_vaapi @ 0x55d8378e5a80] ignoring invalid SAR: 0/0
+update fps: 58, damage fps: 58
+update fps: 60, damage fps: 60
+update fps: 61, damage fps: 61
+update fps: 61, damage fps: 61
+update fps: 60, damage fps: 60
+update fps: 61, damage fps: 61
+gsr info: pipewire: stream 0x55d837908f40 previous state: "streaming", new state: "paused" (error: none)
+gsr info: pipewire: stream 0x55d837908f40 previous state: "paused", new state: "unconnected" (error: none)
+
+(com.dec05eba.gpu_screen_recorder:286231): libayatana-appindicator-WARNING **: 21:04:18.712: libayatana-appindicator is deprecated. Please use libayatana-appindicator-glib in newly written code.
+info: running command: gpu-screen-recorder -w portal -c mp4 -k h264 -ac opus -f 60 -cursor yes -restore-portal-session yes -cr limited -r 30 -encoder gpu -o /home/rambile/Videos -q very_high -a device:default_output
+gsr info: gsr_capture_portal_get_restore_token_from_cache: read cached restore token ()
+gsr info: gsr_capture_portal_setup_dbus: CreateSession
+gsr info: gsr_capture_portal_setup_dbus: SelectSources
+gsr info: gsr_capture_portal_setup_dbus: Start
+gsr info: gsr_capture_portal_save_restore_token: saved restore token to cache ()
+gsr info: gsr_capture_portal_setup_dbus: OpenPipeWireRemote
+gsr info: gsr_capture_portal_setup_dbus: desktop portal setup finished
+gsr info: gsr_capture_portal_setup: setting up pipewire
+gsr info: pipewire: server version: 1.4.5
+gsr info: pipewire: library version: 1.4.5
+gsr info: pipewire: header version: 1.4.5
+gsr info: pipewire: stream 0x557b6bfd3850 previous state: "unconnected", new state: "connecting" (error: none)
+gsr info: gsr_capture_portal_setup: pipewire setup finished
+gsr info: gsr_capture_portal_start: waiting for pipewire negotiation
+gsr info: pipewire: stream 0x557b6bfd3850 previous state: "connecting", new state: "paused" (error: none)
+gsr info: pipewire: negotiated format:
+gsr info: pipewire:    Format: 8 (Spa:Enum:VideoFormat:BGRx)
+gsr info: pipewire:    Modifier: 0x0
+gsr info: pipewire:    Size: 1920x1080
+gsr info: pipewire:    Framerate: 0/1
+gsr info: pipewire: negotiated format:
+gsr info: pipewire:    Format: 8 (Spa:Enum:VideoFormat:BGRx)
+gsr info: pipewire:    Modifier: 0xffffffffffffff
+gsr info: pipewire:    Size: 1920x1080
+gsr info: pipewire:    Framerate: 0/1
+gsr info: pipewire: stream 0x557b6bfd3850 previous state: "paused", new state: "streaming" (error: none)
+gsr info: gsr_capture_portal_start: pipewire negotiation finished
+[h264_vaapi @ 0x557b6bf6bb00] ignoring invalid SAR: 0/0
+update fps: 58, damage fps: 58
+update fps: 60, damage fps: 60
+update fps: 60, damage fps: 60
+update fps: 61, damage fps: 61
+update fps: 61, damage fps: 61
+update fps: 60, damage fps: 60
+update fps: 61, damage fps: 61
+update fps: 61, damage fps: 61
+update fps: 61, damage fps: 61
+update fps: 60, damage fps: 60
+update fps: 61, damage fps: 61
+update fps: 61, damage fps: 61
+update fps: 61, damage fps: 61
+update fps: 61, damage fps: 61
+update fps: 60, damage fps: 60
+update fps: 61, damage fps: 61
+update fps: 60, damage fps: 60
+update fps: 61, damage fps: 61
+update fps: 60, damage fps: 60
+update fps: 61, damage fps: 61
+update fps: 60, damage fps: 60
+update fps: 61, damage fps: 61
+update fps: 61, damage fps: 61
+update fps: 61, damage fps: 61
+update fps: 60, damage fps: 60
+update fps: 61, damage fps: 61
+update fps: 61, damage fps: 61
+update fps: 60, damage fps: 60
+update fps: 60, damage fps: 60
+update fps: 61, damage fps: 61
+update fps: 61, damage fps: 61
+update fps: 61, damage fps: 61
+update fps: 61, damage fps: 61
+gsr info: pipewire: stream 0x557b6bfd3850 previous state: "streaming", new state: "paused" (error: none)
+gsr info: pipewire: stream 0x557b6bfd3850 previous state: "paused", new state: "unconnected" (error: none)
+info: running command: gpu-screen-recorder -w portal -c mp4 -k h264 -ac opus -f 60 -cursor yes -restore-portal-session yes -cr limited -r 30 -encoder gpu -o /home/rambile/Videos -q very_high -a device:default_output
+gsr info: gsr_capture_portal_get_restore_token_from_cache: read cached restore token ()
+gsr info: gsr_capture_portal_setup_dbus: CreateSession
+gsr info: gsr_capture_portal_setup_dbus: SelectSources
+gsr info: gsr_capture_portal_setup_dbus: Start
+gsr info: gsr_capture_portal_save_restore_token: saved restore token to cache ()
+gsr info: gsr_capture_portal_setup_dbus: OpenPipeWireRemote
+gsr info: gsr_capture_portal_setup_dbus: desktop portal setup finished
+gsr info: gsr_capture_portal_setup: setting up pipewire
+gsr info: pipewire: server version: 1.4.5
+gsr info: pipewire: library version: 1.4.5
+gsr info: pipewire: header version: 1.4.5
+gsr info: pipewire: stream 0x55dc49b48840 previous state: "unconnected", new state: "connecting" (error: none)
+gsr info: gsr_capture_portal_setup: pipewire setup finished
+gsr info: gsr_capture_portal_start: waiting for pipewire negotiation
+gsr info: pipewire: stream 0x55dc49b48840 previous state: "connecting", new state: "paused" (error: none)
+gsr info: pipewire: negotiated format:
+gsr info: pipewire:    Format: 8 (Spa:Enum:VideoFormat:BGRx)
+gsr info: pipewire:    Modifier: 0x0
+gsr info: pipewire:    Size: 1920x1080
+gsr info: pipewire:    Framerate: 0/1
+gsr info: pipewire: negotiated format:
+gsr info: pipewire:    Format: 8 (Spa:Enum:VideoFormat:BGRx)
+gsr info: pipewire:    Modifier: 0xffffffffffffff
+gsr info: pipewire:    Size: 1920x1080
+gsr info: pipewire:    Framerate: 0/1
+gsr info: pipewire: stream 0x55dc49b48840 previous state: "paused", new state: "streaming" (error: none)
+gsr info: gsr_capture_portal_start: pipewire negotiation finished
+[h264_vaapi @ 0x55dc49ae0a80] ignoring invalid SAR: 0/0
+update fps: 58, damage fps: 58
+update fps: 61, damage fps: 61
+update fps: 60, damage fps: 60
+update fps: 61, damage fps: 61
+update fps: 60, damage fps: 60
+update fps: 60, damage fps: 60
+update fps: 60, damage fps: 60
+update fps: 60, damage fps: 60
+update fps: 61, damage fps: 61
+update fps: 61, damage fps: 61
+update fps: 61, damage fps: 61
+update fps: 61, damage fps: 61
+update fps: 60, damage fps: 60
+update fps: 61, damage fps: 61
+update fps: 60, damage fps: 60
+update fps: 61, damage fps: 61
+update fps: 60, damage fps: 60
+update fps: 61, damage fps: 61
+update fps: 60, damage fps: 60
+update fps: 60, damage fps: 60
+update fps: 61, damage fps: 61
+update fps: 60, damage fps: 60
+update fps: 60, damage fps: 60
+update fps: 61, damage fps: 61
+update fps: 61, damage fps: 61
+update fps: 60, damage fps: 60
+update fps: 60, damage fps: 60
+update fps: 61, damage fps: 61
+update fps: 60, damage fps: 60
+update fps: 61, damage fps: 61
+update fps: 60, damage fps: 60
+update fps: 60, damage fps: 60
+update fps: 61, damage fps: 61
+update fps: 61, damage fps: 61
+update fps: 61, damage fps: 61
+update fps: 60, damage fps: 60
+update fps: 61, damage fps: 61
+update fps: 60, damage fps: 60
+update fps: 61, damage fps: 61
+update fps: 61, damage fps: 61
+update fps: 61, damage fps: 61
+update fps: 60, damage fps: 60
+update fps: 61, damage fps: 61
+update fps: 61, damage fps: 61
+update fps: 61, damage fps: 61
+/home/rambile/Videos/Replay_2025-07-09_21-07-18.mp4
+update fps: 61, damage fps: 61
+update fps: 60, damage fps: 60
+update fps: 60, damage fps: 60
+update fps: 61, damage fps: 61
+update fps: 61, damage fps: 61
+update fps: 61, damage fps: 61
+update fps: 60, damage fps: 60
+update fps: 60, damage fps: 60
+update fps: 61, damage fps: 61
+update fps: 60, damage fps: 60
+update fps: 61, damage fps: 61
+update fps: 61, damage fps: 61
+update fps: 60, damage fps: 60
+update fps: 61, damage fps: 61
+update fps: 61, damage fps: 61
+update fps: 61, damage fps: 61
+update fps: 60, damage fps: 60
+update fps: 61, damage fps: 61
+update fps: 60, damage fps: 60
+update fps: 61, damage fps: 61
+update fps: 61, damage fps: 61
+update fps: 61, damage fps: 61
+update fps: 60, damage fps: 60
+update fps: 61, damage fps: 61
+update fps: 60, damage fps: 60
+update fps: 61, damage fps: 61
+update fps: 61, damage fps: 61
+update fps: 60, damage fps: 60
+update fps: 61, damage fps: 61
+update fps: 60, damage fps: 60
+update fps: 61, damage fps: 61
+update fps: 61, damage fps: 61
+update fps: 60, damage fps: 60
+update fps: 60, damage fps: 60
+update fps: 60, damage fps: 60
+update fps: 61, damage fps: 61
+update fps: 60, damage fps: 60
+update fps: 61, damage fps: 61
+update fps: 60, damage fps: 60
+update fps: 61, damage fps: 61
+update fps: 61, damage fps: 61
+update fps: 61, damage fps: 61
+update fps: 60, damage fps: 60
+update fps: 61, damage fps: 61
+update fps: 61, damage fps: 61
+update fps: 60, damage fps: 60
+update fps: 61, damage fps: 61
+update fps: 60, damage fps: 60
+update fps: 60, damage fps: 60
+update fps: 61, damage fps: 61
+update fps: 61, damage fps: 61
+update fps: 60, damage fps: 60
+update fps: 61, damage fps: 61
+update fps: 61, damage fps: 61
+update fps: 61, damage fps: 61
+update fps: 60, damage fps: 60
+update fps: 61, damage fps: 61
+update fps: 61, damage fps: 61
+update fps: 60, damage fps: 60
+update fps: 60, damage fps: 60
+update fps: 60, damage fps: 60
+update fps: 61, damage fps: 61
+update fps: 60, damage fps: 60
+update fps: 60, damage fps: 60
+update fps: 60, damage fps: 60
+update fps: 61, damage fps: 61
+update fps: 61, damage fps: 61
+update fps: 60, damage fps: 60
+update fps: 60, damage fps: 60
+update fps: 60, damage fps: 60
+update fps: 61, damage fps: 61
+update fps: 60, damage fps: 60
+update fps: 60, damage fps: 60
+update fps: 61, damage fps: 61
+update fps: 61, damage fps: 61
+update fps: 60, damage fps: 60
+update fps: 61, damage fps: 61
+update fps: 60, damage fps: 60
+update fps: 60, damage fps: 60
+update fps: 61, damage fps: 61
+update fps: 60, damage fps: 60
+update fps: 61, damage fps: 61
+update fps: 61, damage fps: 61
+update fps: 60, damage fps: 60
+update fps: 61, damage fps: 61
+update fps: 60, damage fps: 60
+update fps: 61, damage fps: 61
+update fps: 60, damage fps: 60
+update fps: 61, damage fps: 61
+update fps: 61, damage fps: 61
+update fps: 61, damage fps: 61
+update fps: 61, damage fps: 61
+update fps: 60, damage fps: 60
+update fps: 60, damage fps: 60
+update fps: 61, damage fps: 61
+update fps: 61, damage fps: 61
+update fps: 60, damage fps: 60
+update fps: 61, damage fps: 61
+update fps: 60, damage fps: 60
+update fps: 61, damage fps: 61
+update fps: 60, damage fps: 60
+update fps: 61, damage fps: 61
+update fps: 60, damage fps: 60
+update fps: 60, damage fps: 60
+update fps: 61, damage fps: 61
+update fps: 61, damage fps: 61
+update fps: 61, damage fps: 61
+update fps: 60, damage fps: 60
+update fps: 61, damage fps: 61
+update fps: 60, damage fps: 60
+update fps: 61, damage fps: 61
+update fps: 60, damage fps: 60
+update fps: 61, damage fps: 61
+update fps: 60, damage fps: 60
+update fps: 61, damage fps: 61
+update fps: 60, damage fps: 60
+update fps: 60, damage fps: 60
+update fps: 61, damage fps: 61
+update fps: 61, damage fps: 61
+update fps: 60, damage fps: 60
+update fps: 61, damage fps: 61
+update fps: 61, damage fps: 61
+update fps: 61, damage fps: 61
+update fps: 60, damage fps: 60
+update fps: 61, damage fps: 61
+update fps: 61, damage fps: 61
+update fps: 61, damage fps: 61
+update fps: 61, damage fps: 61
+update fps: 60, damage fps: 60
+update fps: 61, damage fps: 61
+update fps: 60, damage fps: 60
+update fps: 61, damage fps: 61
+update fps: 60, damage fps: 60
+update fps: 61, damage fps: 61
+update fps: 60, damage fps: 60
+update fps: 60, damage fps: 60
+update fps: 61, damage fps: 61
+update fps: 60, damage fps: 60
+update fps: 61, damage fps: 61
+update fps: 61, damage fps: 61
+update fps: 61, damage fps: 61
+update fps: 60, damage fps: 60
+update fps: 60, damage fps: 60
+update fps: 61, damage fps: 61
+update fps: 60, damage fps: 60
+update fps: 61, damage fps: 61
+update fps: 61, damage fps: 61
+update fps: 61, damage fps: 61
+update fps: 61, damage fps: 61
+update fps: 61, damage fps: 61
+update fps: 61, damage fps: 61
+update fps: 61, damage fps: 61
+update fps: 60, damage fps: 60
+update fps: 61, damage fps: 61
+update fps: 61, damage fps: 61
+update fps: 60, damage fps: 60
+update fps: 60, damage fps: 60
+update fps: 61, damage fps: 61
+update fps: 60, damage fps: 60
+update fps: 61, damage fps: 61
+update fps: 60, damage fps: 60
+update fps: 60, damage fps: 60
+update fps: 60, damage fps: 60
+update fps: 60, damage fps: 60
+update fps: 61, damage fps: 61
+update fps: 61, damage fps: 61
+update fps: 60, damage fps: 60
+update fps: 61, damage fps: 61
+update fps: 60, damage fps: 60
+update fps: 61, damage fps: 61
+update fps: 60, damage fps: 60
+update fps: 60, damage fps: 60
+update fps: 61, damage fps: 61
+update fps: 61, damage fps: 61
+update fps: 61, damage fps: 61
+update fps: 61, damage fps: 61
+update fps: 60, damage fps: 60
+update fps: 61, damage fps: 61
+update fps: 60, damage fps: 60
+update fps: 60, damage fps: 60
+update fps: 60, damage fps: 60
+update fps: 61, damage fps: 61
+update fps: 60, damage fps: 60
+update fps: 61, damage fps: 61
+update fps: 61, damage fps: 61
+update fps: 61, damage fps: 61
+update fps: 61, damage fps: 61
+update fps: 60, damage fps: 60
+update fps: 60, damage fps: 60
+update fps: 60, damage fps: 60
+update fps: 60, damage fps: 60
+update fps: 61, damage fps: 61
+update fps: 61, damage fps: 61
+update fps: 60, damage fps: 60
+update fps: 60, damage fps: 60
+update fps: 61, damage fps: 61
+update fps: 60, damage fps: 60
+update fps: 61, damage fps: 61
+update fps: 60, damage fps: 60
+update fps: 61, damage fps: 61
+update fps: 61, damage fps: 61
+update fps: 61, damage fps: 61
+update fps: 61, damage fps: 61
+update fps: 61, damage fps: 61
+update fps: 61, damage fps: 61
+update fps: 61, damage fps: 61
+update fps: 61, damage fps: 61
+update fps: 60, damage fps: 60
+update fps: 61, damage fps: 61
+update fps: 60, damage fps: 60
+update fps: 61, damage fps: 61
+update fps: 60, damage fps: 60
+update fps: 61, damage fps: 61
+update fps: 61, damage fps: 61
+update fps: 61, damage fps: 61
+update fps: 60, damage fps: 60
+update fps: 60, damage fps: 60
+update fps: 61, damage fps: 61
+
+(com.dec05eba.gpu_screen_recorder:307149): libayatana-appindicator-WARNING **: 21:10:58.552: libayatana-appindicator is deprecated. Please use libayatana-appindicator-glib in newly written code.
+update fps: 60, damage fps: 60
+update fps: 61, damage fps: 61
+info: running command: gpu-screen-recorder -w portal -c mp4 -k h264 -ac opus -f 60 -cursor yes -restore-portal-session yes -cr limited -encoder gpu -o /home/rambile/Videos/Video_2025-07-09_21-11-01.mp4 -q very_high -a device:default_output
+update fps: 61, damage fps: 61
+gsr info: gsr_capture_portal_get_restore_token_from_cache: read cached restore token ()
+gsr info: gsr_capture_portal_setup_dbus: CreateSession
+gsr info: gsr_capture_portal_setup_dbus: SelectSources
+update fps: 61, damage fps: 61
+gsr info: gsr_capture_portal_setup_dbus: Start
+gsr info: gsr_capture_portal_save_restore_token: saved restore token to cache ()
+gsr info: gsr_capture_portal_setup_dbus: OpenPipeWireRemote
+gsr info: gsr_capture_portal_setup_dbus: desktop portal setup finished
+gsr info: gsr_capture_portal_setup: setting up pipewire
+gsr info: pipewire: server version: 1.4.5
+gsr info: pipewire: library version: 1.4.5
+gsr info: pipewire: header version: 1.4.5
+gsr info: pipewire: stream 0x55d1fd4ba1e0 previous state: "unconnected", new state: "connecting" (error: none)
+gsr info: gsr_capture_portal_setup: pipewire setup finished
+gsr info: gsr_capture_portal_start: waiting for pipewire negotiation
+gsr info: pipewire: stream 0x55d1fd4ba1e0 previous state: "connecting", new state: "paused" (error: none)
+gsr info: pipewire: negotiated format:
+gsr info: pipewire:    Format: 8 (Spa:Enum:VideoFormat:BGRx)
+gsr info: pipewire:    Modifier: 0x0
+gsr info: pipewire:    Size: 1920x1080
+gsr info: pipewire:    Framerate: 0/1
+gsr info: pipewire: negotiated format:
+gsr info: pipewire:    Format: 8 (Spa:Enum:VideoFormat:BGRx)
+gsr info: pipewire:    Modifier: 0xffffffffffffff
+gsr info: pipewire:    Size: 1920x1080
+gsr info: pipewire:    Framerate: 0/1
+gsr info: pipewire: stream 0x55d1fd4ba1e0 previous state: "paused", new state: "streaming" (error: none)
+gsr info: gsr_capture_portal_start: pipewire negotiation finished
+[h264_vaapi @ 0x55d1fd4cba80] ignoring invalid SAR: 0/0
+update fps: 54, damage fps: 54
+update fps: 50, damage fps: 50
+update fps: 47, damage fps: 47
+update fps: 41, damage fps: 41
+update fps: 51, damage fps: 51
+update fps: 43, damage fps: 43
+update fps: 46, damage fps: 46
+update fps: 44, damage fps: 44
+/home/rambile/Videos/Replay_2025-07-09_21-11-07.mp4
+update fps: 44, damage fps: 44
+update fps: 46, damage fps: 46
+update fps: 46, damage fps: 46
+update fps: 47, damage fps: 47
+update fps: 46, damage fps: 46
+update fps: 46, damage fps: 46
+gsr info: pipewire: stream 0x55dc49b48840 previous state: "streaming", new state: "paused" (error: none)
+gsr info: pipewire: stream 0x55dc49b48840 previous state: "paused", new state: "unconnected" (error: none)
+update fps: 54, damage fps: 54
+update fps: 60, damage fps: 60
+update fps: 61, damage fps: 61
+update fps: 60, damage fps: 60
+update fps: 60, damage fps: 60
+update fps: 61, damage fps: 61
+update fps: 61, damage fps: 61
+update fps: 61, damage fps: 61
+update fps: 61, damage fps: 61
+update fps: 60, damage fps: 60
+update fps: 60, damage fps: 60
+update fps: 60, damage fps: 60
+update fps: 61, damage fps: 61
+update fps: 60, damage fps: 60
+update fps: 61, damage fps: 61
+update fps: 61, damage fps: 61
+update fps: 60, damage fps: 60
+update fps: 60, damage fps: 60
+update fps: 61, damage fps: 61
+update fps: 61, damage fps: 61
+update fps: 61, damage fps: 61
+update fps: 60, damage fps: 60
+update fps: 61, damage fps: 61
+update fps: 60, damage fps: 60
+update fps: 61, damage fps: 61
+update fps: 61, damage fps: 61
+update fps: 60, damage fps: 60
+update fps: 61, damage fps: 61
+update fps: 60, damage fps: 60
+update fps: 60, damage fps: 60
+update fps: 61, damage fps: 61
+update fps: 61, damage fps: 61
+update fps: 61, damage fps: 61
+update fps: 60, damage fps: 60
+update fps: 60, damage fps: 60
+update fps: 61, damage fps: 61
+update fps: 60, damage fps: 60
+update fps: 61, damage fps: 61
+update fps: 60, damage fps: 60
+update fps: 60, damage fps: 60
+update fps: 60, damage fps: 60
+update fps: 61, damage fps: 61
+update fps: 61, damage fps: 61
+update fps: 61, damage fps: 61
+update fps: 60, damage fps: 60
+update fps: 61, damage fps: 61
+update fps: 60, damage fps: 60
+update fps: 61, damage fps: 61
+update fps: 60, damage fps: 60
+update fps: 60, damage fps: 60
+update fps: 60, damage fps: 60
+update fps: 61, damage fps: 61
+update fps: 60, damage fps: 60
+update fps: 60, damage fps: 60
+update fps: 61, damage fps: 61
+update fps: 60, damage fps: 60
+update fps: 60, damage fps: 60
+update fps: 61, damage fps: 61
+update fps: 61, damage fps: 61
+update fps: 60, damage fps: 60
+update fps: 61, damage fps: 61
+update fps: 61, damage fps: 61
+update fps: 61, damage fps: 61
+update fps: 61, damage fps: 61
+update fps: 60, damage fps: 60
+update fps: 60, damage fps: 60
+update fps: 61, damage fps: 61
+update fps: 61, damage fps: 61
+update fps: 60, damage fps: 60
+update fps: 61, damage fps: 61
+update fps: 60, damage fps: 60
+update fps: 61, damage fps: 61
+update fps: 60, damage fps: 60
+update fps: 60, damage fps: 60
+update fps: 61, damage fps: 61
+update fps: 60, damage fps: 60
+update fps: 61, damage fps: 61
+update fps: 60, damage fps: 60
+update fps: 61, damage fps: 61
+update fps: 61, damage fps: 61
+update fps: 60, damage fps: 60
+update fps: 60, damage fps: 60
+update fps: 61, damage fps: 61
+update fps: 61, damage fps: 61
+update fps: 60, damage fps: 60
+update fps: 60, damage fps: 60
+gsr info: pipewire: stream 0x55d1fd4ba1e0 previous state: "streaming", new state: "paused" (error: none)
+gsr info: pipewire: stream 0x55d1fd4ba1e0 previous state: "paused", new state: "unconnected" (error: none)
+Notification: title: GPU Screen Recorder, body: The recording was saved to /home/rambile/Videos/Video_2025-07-09_21-11-01.mp4
+
+(com.dec05eba.gpu_screen_recorder:316506): libayatana-appindicator-WARNING **: 21:13:58.824: libayatana-appindicator is deprecated. Please use libayatana-appindicator-glib in newly written code.
+info: running command: gpu-screen-recorder -w portal -c mp4 -k h264 -ac opus -f 60 -cursor yes -restore-portal-session yes -cr limited -r 30 -encoder gpu -o /home/rambile/Videos -q very_high -a device:default_output
+gsr info: gsr_capture_portal_get_restore_token_from_cache: read cached restore token ()
+gsr info: gsr_capture_portal_setup_dbus: CreateSession
+gsr info: gsr_capture_portal_setup_dbus: SelectSources
+gsr info: gsr_capture_portal_setup_dbus: Start
+gsr info: gsr_capture_portal_save_restore_token: saved restore token to cache ()
+gsr info: gsr_capture_portal_setup_dbus: OpenPipeWireRemote
+gsr info: gsr_capture_portal_setup_dbus: desktop portal setup finished
+gsr info: gsr_capture_portal_setup: setting up pipewire
+gsr info: pipewire: server version: 1.4.5
+gsr info: pipewire: library version: 1.4.5
+gsr info: pipewire: header version: 1.4.5
+gsr info: pipewire: stream 0x561c4b806ad0 previous state: "unconnected", new state: "connecting" (error: none)
+gsr info: gsr_capture_portal_setup: pipewire setup finished
+gsr info: gsr_capture_portal_start: waiting for pipewire negotiation
+gsr info: pipewire: stream 0x561c4b806ad0 previous state: "connecting", new state: "paused" (error: none)
+gsr info: pipewire: negotiated format:
+gsr info: pipewire:    Format: 8 (Spa:Enum:VideoFormat:BGRx)
+gsr info: pipewire:    Modifier: 0x0
+gsr info: pipewire:    Size: 1920x1080
+gsr info: pipewire:    Framerate: 0/1
+gsr info: pipewire: negotiated format:
+gsr info: pipewire:    Format: 8 (Spa:Enum:VideoFormat:BGRx)
+gsr info: pipewire:    Modifier: 0xffffffffffffff
+gsr info: pipewire:    Size: 1920x1080
+gsr info: pipewire:    Framerate: 0/1
+gsr info: pipewire: stream 0x561c4b806ad0 previous state: "paused", new state: "streaming" (error: none)
+gsr info: gsr_capture_portal_start: pipewire negotiation finished
+[h264_vaapi @ 0x561c4b79fa00] ignoring invalid SAR: 0/0
+update fps: 58, damage fps: 58
+update fps: 60, damage fps: 60
+update fps: 60, damage fps: 60
+gsr info: pipewire: stream 0x561c4b806ad0 previous state: "streaming", new state: "paused" (error: none)
+gsr info: pipewire: stream 0x561c4b806ad0 previous state: "paused", new state: "unconnected" (error: none)
+
+(com.dec05eba.gpu_screen_recorder:325174): libayatana-appindicator-WARNING **: 21:23:21.403: libayatana-appindicator is deprecated. Please use libayatana-appindicator-glib in newly written code.
+
+(com.dec05eba.gpu_screen_recorder:325231): libayatana-appindicator-WARNING **: 21:23:42.975: libayatana-appindicator is deprecated. Please use libayatana-appindicator-glib in newly written code.
+
+(com.dec05eba.gpu_screen_recorder:325273): libayatana-appindicator-WARNING **: 21:23:55.249: libayatana-appindicator is deprecated. Please use libayatana-appindicator-glib in newly written code.
+
+(com.dec05eba.gpu_screen_recorder:325364): libayatana-appindicator-WARNING **: 21:26:08.753: libayatana-appindicator is deprecated. Please use libayatana-appindicator-glib in newly written code.
+
+(com.dec05eba.gpu_screen_recorder:325435): libayatana-appindicator-WARNING **: 21:26:40.139: libayatana-appindicator is deprecated. Please use libayatana-appindicator-glib in newly written code.
+info: running command: gpu-screen-recorder -w portal -c mp4 -k h264 -ac opus -f 60 -cursor yes -restore-portal-session yes -cr limited -encoder gpu -o /home/rambile/Videos/Video_2025-07-09_21-27-29.mp4 -q very_high -a device:default_output
+gsr info: gsr_capture_portal_get_restore_token_from_cache: read cached restore token ()
+gsr info: gsr_capture_portal_setup_dbus: CreateSession
+gsr info: gsr_capture_portal_setup_dbus: SelectSources
+gsr info: gsr_capture_portal_setup_dbus: Start
+gsr info: gsr_capture_portal_save_restore_token: saved restore token to cache ()
+gsr info: gsr_capture_portal_setup_dbus: OpenPipeWireRemote
+gsr info: gsr_capture_portal_setup_dbus: desktop portal setup finished
+gsr info: gsr_capture_portal_setup: setting up pipewire
+gsr info: pipewire: server version: 1.4.5
+gsr info: pipewire: library version: 1.4.5
+gsr info: pipewire: header version: 1.4.5
+gsr info: pipewire: stream 0x55d409819c10 previous state: "unconnected", new state: "connecting" (error: none)
+gsr info: gsr_capture_portal_setup: pipewire setup finished
+gsr info: gsr_capture_portal_start: waiting for pipewire negotiation
+gsr info: pipewire: stream 0x55d409819c10 previous state: "connecting", new state: "paused" (error: none)
+gsr info: pipewire: negotiated format:
+gsr info: pipewire:    Format: 8 (Spa:Enum:VideoFormat:BGRx)
+gsr info: pipewire:    Modifier: 0x0
+gsr info: pipewire:    Size: 1920x1080
+gsr info: pipewire:    Framerate: 0/1
+gsr info: pipewire: negotiated format:
+gsr info: pipewire:    Format: 8 (Spa:Enum:VideoFormat:BGRx)
+gsr info: pipewire:    Modifier: 0xffffffffffffff
+gsr info: pipewire:    Size: 1920x1080
+gsr info: pipewire:    Framerate: 0/1
+gsr info: pipewire: stream 0x55d409819c10 previous state: "paused", new state: "streaming" (error: none)
+gsr info: gsr_capture_portal_start: pipewire negotiation finished
+[h264_vaapi @ 0x55d4097b2b40] ignoring invalid SAR: 0/0
+update fps: 58, damage fps: 58
+update fps: 61, damage fps: 61
+update fps: 61, damage fps: 61
+update fps: 61, damage fps: 61
+update fps: 61, damage fps: 61
+update fps: 61, damage fps: 61
+gsr info: pipewire: stream 0x55d409819c10 previous state: "streaming", new state: "paused" (error: none)
+gsr info: pipewire: stream 0x55d409819c10 previous state: "paused", new state: "unconnected" (error: none)
+Notification: title: GPU Screen Recorder, body: The recording was saved to /home/rambile/Videos/Video_2025-07-09_21-27-29.mp4
