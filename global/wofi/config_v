@@ -1,0 +1,11 @@
+orientation=vertical
+hide_scroll=false
+image_size=12
+width=800
+height=300
+allow_images=true
+matching=contains
+insensitive=true
+allow_images=true
+location=center
+no_actions=true

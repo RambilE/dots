@@ -1,0 +1,16 @@
+max-history=9
+max-visible=3
+default-timeout=7500
+
+sort=+time
+layer=overlay
+anchor=top-right
+on-button-left=invoke-default-action
+on-button-middle=dismiss
+
+font="0xProto Nerd Font 10"
+background-color=#1e1e2e
+text-color=#cdd6f4
+border-color=#f2cdcd
+border-size=2
+border-radius=10
