@@ -14,7 +14,7 @@ read -p "Your choice: " choice
 if [[ $choice == "1" || $choice == "deps" || $choice == "check deps" ]] then
     printf "Checking dependencies...\n\n"
     
-    deplist=("hyprland" "hyprpaper" "hyprpolkitagent" "mako" "waybar" "wofi" "wlogout" "hyprshot" "satty" "qt6ct" "qt5ct" "vlc" "thunar" "gvfs" "pavucontrol" "gpu-screen-recorder-gtk" "ttf-0xproto-nerd")
+    deplist=("hyprland" "hyprpaper" "hyprpolkitagent" "mako" "waybar" "wofi" "wlogout" "hyprshot" "satty" "qt6ct" "vlc" "thunar" "gvfs" "pavucontrol" "gpu-screen-recorder-gtk" "ttf-0xproto-nerd")
     
     err=()
     for dep in "${deplist[@]}";
