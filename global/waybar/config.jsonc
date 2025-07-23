@@ -7,9 +7,9 @@
     "fixed-center": true,
     "modules-left": [
         "hyprland/workspaces",
-        "hyprland/window",
-        "niri/workspaces",
-        "niri/window",
+        "hyprland/window"
+        /* "niri/workspaces", */
+        /* "niri/window", */
     ],
     "modules-center": [
         "clock"
@@ -25,7 +25,7 @@
         /* "power-profiles-daemon", */
         /* "battery", */
 
-        "tray",
+        "tray"
     ],
     
     // Modules configuration

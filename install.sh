@@ -57,6 +57,7 @@ elif [[ $choice == "2" || $choice == "install" ]] then
         cp -r ~/.config/mako ./backup
         cp -r ~/.config/gtk-3.0 ./backup
         cp -r ~/.config/gtk-4.0 ./backup
+        cp -r ~/.config/satty ./backup
 
         printf "\e[3mLinking files...\e[0m\n"
 
@@ -69,6 +70,7 @@ elif [[ $choice == "2" || $choice == "install" ]] then
         ln -f ./global/mako/* ~/.config/mako/
         ln -f ./global/gtk-3.0/* ~/.config/gtk-3.0/
         ln -f ./global/gtk-4.0/* ~/.config/gtk-4.0/
+        ln -f ./global/satty/* ~/.config/satty/
         
         printf "idk if it linked everything, go test it (and relogin just in case)\n\n"
         main
@@ -87,8 +89,9 @@ elif [[ $choice == "3" || $choice == "remove" || $choice == "rm" ]] then
         rm -rf ~/.config/fastfetch/
         rm -rf ~/.config/qt6ct/colors/
         rm -rf ~/.config/mako/
-        rm -rf 3.0/* ~/.config/gtk-3.0/
-        rm -rf 4.0/* ~/.config/gtk-4.0/
+        rm -rf ~/.config/gtk-3.0/
+        rm -rf ~/.config/gtk-4.0/
+        rm -rf ~/.config/satty/
         
         printf "\e[3mCopying back old files...\e[0m\n"
         
@@ -101,6 +104,7 @@ elif [[ $choice == "3" || $choice == "remove" || $choice == "rm" ]] then
         cp -r ./backup/mako ~/.config/mako
         cp -r ./backup/gtk-3.0 ~/.config/gtk-3.0
         cp -r ./backup/gtk-4.0 ~/.config/gtk-4.0
+        cp -r ./backup/satty ~/.config/satty
     fi
 else
     main
