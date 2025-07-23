@@ -8,3 +8,5 @@ Folders that are not "global" are more like an archive
 
 # todo
 additional gui installation script
+
+different catppuccin flavors
