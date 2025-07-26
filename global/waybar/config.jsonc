@@ -1,26 +1,20 @@
 // -*- mode: jsonc -*-
 {
     "layer": "top",
-    "height": 40,
+    "position": "bottom",
+    "height": 33,
     "spacing": 4, // Gaps between modules (4px)
     "reload_style_on_change": true,
     "fixed-center": true,
     "modules-left": [
-        "hyprland/workspaces",
-        "hyprland/window"
+        "custom/start"
         /* "niri/workspaces", */
         /* "niri/window", */
     ],
-    "modules-center": [
-        "clock"
-    ],
     "modules-right": [
-        "mpris",
-        "memory",
-        "cpu",
         "wireplumber",
         "hyprland/language",
-        
+        "clock",
         /* "niri/language", */
         /* "power-profiles-daemon", */
         /* "battery", */
@@ -29,7 +23,9 @@
     ],
     
     // Modules configuration
-   
+    "custom/start": {
+        "format": " {}"
+    },   
     "hyprland/window": {
        "format": "{title}",
        "tooltip": false,

@@ -1,7 +1,7 @@
 @import "mocha.css";
 * {
-    font-family: "0xProto Nerd Font";
-    font-size: 14px;
+    font-family: "0xProto Nerd Font, se";
+    font-size: 20px;
     color: @text;
     text-shadow : 1px 1px 2px;
 }
@@ -9,7 +9,17 @@
 window#waybar {
     all: initial;
     padding: 0;
-    background-color: @base;
+    background-color: #245fdd;
+    box-shadow: inset 0 3px 0px 3px #4b91e3;
+    box-shadow: inset 0 3px 3px 3px #41a9e2;
+}
+
+#custom-start {
+    background-image: url("/home/rambile/.config/waybar/logo.png"), url("/home/rambile/.config/waybar/bg.png");
+    background-repeat: no-repeat, no-repeat;
+    background-size: 25px 20px, 99px 33px;
+    background-position: 10px, 0px;
+    padding: 0px 48px;
 }
 
 button {
