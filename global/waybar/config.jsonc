@@ -126,7 +126,7 @@
     "mpris": {
         "format": "{dynamic}",
         "dynamic-order": ["artist", "title"],
-        "player": "playerctld",
+        "player": "vlc",
     }
         }
     }
