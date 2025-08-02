@@ -44,7 +44,7 @@ if [[ $choice == "1" || $choice == "deps" || $choice == "check deps" ]] then
 
 elif [[ $choice == "2" || $choice == "install" ]] then
         printf "\e[0;31;1mBecause i'm lazy to do it the other way, you need to clone this repo in ~/code/ in order for some bash scripts and wallpapers to work.\nIf you want them to work from other directories, you'll need to edit ~/.config/hypr/hyprpaper.conf and ~/.config/hypr/binds_util.conf (line 21) and copy these files where you want them to be.\n\e[0;37;0m"
-        read -p "Please press anything to continue to installation. This will link files from ./global/ to where they need to be. This will also copy all relevant dotfiles to ./backup/ dir. Please be sure that you're installing this from the same block device that your ~/.config/ directory is as it is hard links. "
+        read -p "Please press anything to continue to installation. This will link files from ./global/ to where they need to be. This will also copy all relevant dotfiles to ./backup/ dir, and copy it somewhere if you will install multiple times. Please be sure that you're installing this from the same block device that your ~/.config/ directory is as it is hard links. "
         
         printf "\e[3mBacking up files...\e[3m\n"
         mkdir backup 2> /dev/null

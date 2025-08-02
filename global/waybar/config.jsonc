@@ -18,7 +18,8 @@
         "mpris",
         "memory",
         "cpu",
-        "wireplumber",
+        "wireplumber#sink",
+        "wireplumber#source",
         "hyprland/language",
         
         /* "niri/language", */
@@ -29,7 +30,7 @@
     ],
     
     // Modules configuration
-   
+    
     "hyprland/window": {
        "format": "{title}",
        "tooltip": false,
@@ -62,17 +63,17 @@
         "interval": 1, 
         "tooltip-format": "<tt><small>{calendar}</small></tt>",
         "calendar": {
-          "mode"          : "year",
+          "mode"          : "month",
           "mode-mon-col"  : 3,
           "weeks-pos"     : "right",
           "on-scroll"     : 1,
           "on-click-right": "mode",
              "format": {
-             "months":     "<span color='#ffead3'><b>{}</b></span>",
-             "days":       "<span color='#ecc6d9'><b>{}</b></span>",
-             "weeks":      "<span color='#99ffdd'><b>W{}</b></span>",
-             "weekdays":   "<span color='#ffcc66'><b>{}</b></span>",
-             "today":      "<span color='#ff6699'><b><u>{}</u></b></span>"
+             "months":     "<span color='#cdd6f4'><b>{}</b></span>",
+             "days":       "<span color='#cdd6f4'><b>{}</b></span>",
+             "weeks":      "<span color='#a6e3a1'><b>W{}</b></span>",
+             "weekdays":   "<span color='#f38ba8'><b>{}</b></span>",
+             "today":      "<span color='#f2cdcd'><b><u>{}</u></b></span>"
 		    }
 	     },
         "format-alt": "{:%d/%m/%Y}",
@@ -117,11 +118,22 @@
 	     "interval": 3,
 	     "format": " {usage:}%",
     },
-    "wireplumber": {
-       "format": "{volume}%",
-       "format-muted": "",
+    "wireplumber#sink": {
+       "format": "󰋎 {volume}%",
+       "format-muted": " {volume}%",
+       "tooltip-format": "{node_name}",
        "scroll-step": 5,
-       "on-click": "pavucontrol",
+       "on-click": "pavucontrol --tab 3",
+       "on-click-right": "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle",
+    },
+    "wireplumber#source": {
+       "node-type": "Audio/Source",
+       "format": "",
+       "format-muted": "󰍭",
+       "tooltip-format": "{node_name} - {volume}%",
+       "scroll-step": 5,
+       "on-click": "pavucontrol --tab 4",
+       "on-click-right": "wpctl set-mute @DEFAULT_AUDIO_SOURCE@ toggle",
     },
     "mpris": {
         "format": "{dynamic}",
@@ -131,6 +143,6 @@
         "title-len": 48,
         "artist-len": 30,
     }
-        }
-    }
+}
+}
 }
