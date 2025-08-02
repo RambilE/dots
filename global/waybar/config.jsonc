@@ -127,6 +127,9 @@
         "format": "{dynamic}",
         "dynamic-order": ["artist", "title"],
         "player": "vlc",
+        "dynamic-len": 48,
+        "title-len": 48,
+        "artist-len": 30,
     }
         }
     }
