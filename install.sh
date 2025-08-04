@@ -14,7 +14,7 @@ read -p "Your choice: " choice
 if [[ $choice == "1" || $choice == "deps" || $choice == "check deps" ]] then
     printf "Checking dependencies...\n\n"
     
-    deplist=("hyprland" "hyprpaper" "hyprpolkitagent" "mako" "syshud" "waybar" "wofi" "wlogout" "hyprshot" "satty" "qt6ct" "qt5ct" "breeze" "breeze5" "rose-pine-hyprcursor" "vlc" "thunar" "gvfs" "pavucontrol" "gpu-screen-recorder-gtk" "ttf-0xproto-nerd")
+    deplist=("hyprland" "hyprpaper" "hyprpolkitagent" "mako" "cliphist" "syshud" "waybar" "wofi" "kitty" "wlogout" "hyprshot" "satty" "qt6ct" "qt5ct" "breeze" "breeze5" "rose-pine-hyprcursor" "vlc" "thunar" "gvfs" "pavucontrol" "gpu-screen-recorder-gtk" "ttf-0xproto-nerd")
     
     err=()
     for dep in "${deplist[@]}";
@@ -58,6 +58,7 @@ elif [[ $choice == "2" || $choice == "install" ]] then
         cp -r ~/.config/gtk-3.0 ./backup
         cp -r ~/.config/gtk-4.0 ./backup
         cp -r ~/.config/satty ./backup
+        cp -r ~/.config/kitty ./backup
 
         printf "\e[3mLinking files...\e[0m\n"
 
@@ -71,6 +72,7 @@ elif [[ $choice == "2" || $choice == "install" ]] then
         ln -f ./global/gtk-3.0/* ~/.config/gtk-3.0/
         ln -f ./global/gtk-4.0/* ~/.config/gtk-4.0/
         ln -f ./global/satty/* ~/.config/satty/
+        ln -f ./global/kitty/* ~/.config/kitty/
         
         printf "idk if it linked everything, go test it (and relogin just in case)\n\n"
         main
@@ -92,6 +94,7 @@ elif [[ $choice == "3" || $choice == "remove" || $choice == "rm" ]] then
         rm -rf ~/.config/gtk-3.0/
         rm -rf ~/.config/gtk-4.0/
         rm -rf ~/.config/satty/
+        rm -rf ~/.config/kitty/
         
         printf "\e[3mCopying back old files...\e[0m\n"
         
@@ -105,6 +108,7 @@ elif [[ $choice == "3" || $choice == "remove" || $choice == "rm" ]] then
         cp -r ./backup/gtk-3.0 ~/.config/gtk-3.0
         cp -r ./backup/gtk-4.0 ~/.config/gtk-4.0
         cp -r ./backup/satty ~/.config/satty
+        cp -r ./backup/kitty ~/.config/kitty
     fi
 else
     main
