@@ -1,4 +1,10 @@
 {
+    "label" : "suspend",
+    "action" : "systemctl suspend",
+    "text" : "Suspend",
+    "keybind" : "x"
+}
+{
     "label" : "logout",
     "action" : "hyprctl dispatch exit",
     "text" : "Logout",
@@ -9,10 +15,4 @@
     "action" : "systemctl poweroff",
     "text" : "Shutdown",
     "keybind" : "s"
-}
-{
-    "label" : "reboot",
-    "action" : "systemctl reboot",
-    "text" : "Reboot",
-    "keybind" : "r"
 }

@@ -7,9 +7,10 @@
     "fixed-center": true,
     "modules-left": [
         "hyprland/workspaces",
+        "custom/fullscreen",
         "hyprland/window"
-        /* "niri/workspaces", */
-        /* "niri/window", */
+        // "niri/workspaces",
+        // "niri/window",
     ],
     "modules-center": [
         "clock"
@@ -22,16 +23,21 @@
         "wireplumber#source",
         "hyprland/language",
         
-        /* "niri/language", */
-        /* "power-profiles-daemon", */
-        /* "battery", */
+        // "niri/language",
+        // "power-profiles-daemon",
+        // "battery",
 
         "tray"
     ],
     
     // Modules configuration
-    
+    "custom/fullscreen": {
+        "exec": "~/code/dots/global/dotscripts/fullscreencheck.sh",
+        "signal": 8,
+    },
     "hyprland/window": {
+       "icon": false,
+       "icon-size": 20,
        "format": "{title}",
        "tooltip": false,
     },
@@ -139,8 +145,8 @@
         "format": "{dynamic}",
         "dynamic-order": ["artist", "title"],
         "player": "vlc",
-        "dynamic-len": 48,
-        "title-len": 48,
+        "dynamic-len": 35,
+        "title-len": 35,
         "artist-len": 30,
     }
 }
