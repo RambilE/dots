@@ -22,6 +22,7 @@ if [[ $choice == "1" || $choice == "deps" || $choice == "check deps" ]] then
         if ! [[ $(pacman -Qq $dep 2> /dev/null) == "$dep" ]] then
             printf "\e[0;31;1m$dep was not found!\e[0;37;0m\n"
             err+=($dep)
+            printf($dep)
         fi
     done
 
@@ -60,6 +61,19 @@ elif [[ $choice == "2" || $choice == "install" ]] then
         cp -r ~/.config/satty ./backup
         cp -r ~/.config/foot ./backup
 
+        printf "\e[3mCreating directories...\e[0m\n"
+        mkdir -p ~/.config/hypr \
+                 ~/.config/wlogout \
+                 ~/.config/wofi \
+                 ~/.config/waybar \
+                 ~/.config/fastfetch \
+                 ~/.config/qt6ct/colors \
+                 ~/.config/mako \
+                 ~/.config/gtk-3.0 \
+                 ~/.config/gtk-4.0 \
+                 ~/.config/satty \
+                 ~/.config/foot 
+                 
         printf "\e[3mLinking files...\e[0m\n"
 
         ln -f ./global/hypr/* ~/.config/hypr/

@@ -53,19 +53,12 @@
        "format-en": "en",
        "format-ru": "ru",
     }, 
-    "idle_inhibitor": {
-        "format": "{icon}",
-        "format-icons": {
-            "activated": "",
-            "deactivated": ""
-        }
-    },
     "tray": {
         "spacing": 10
     },
     "clock": {
         "locale": "en_GB.UTF-8",
-        "format": "{:%H:%M | %d %b, %Y}",
+        "format": "[ {:%H:%M @ %d %b, %Y} ]",
         "interval": 1, 
         "tooltip-format": "<tt><small>{calendar}</small></tt>",
         "calendar": {
@@ -82,7 +75,7 @@
              "today":      "<span color='#f2cdcd'><b><u>{}</u></b></span>"
 		    }
 	     },
-        "format-alt": "{:%d/%m/%Y}",
+        "format-alt": "[ {:%d.%m.%Y} ]",
         "actions": {
 		      "on-click-right": "mode",
 		      "on-click-forward": "tz_up",
@@ -144,7 +137,7 @@
     "mpris": {
         "format": "{dynamic}",
         "dynamic-order": ["artist", "title"],
-        "player": "vlc",
+        "player": "naviterm",
         "dynamic-len": 35,
         "title-len": 35,
         "artist-len": 30,
