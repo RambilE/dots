@@ -25,7 +25,7 @@ if [[ $choice == "1" || $choice == "deps" || $choice == "check deps" ]] then
         fi
     done
 
-    echo $err
+    echo ${err[@]}
     if ! [[ $err == "" ]] then
         read -p "Dependencies are missing! install them now? (y/n) " choice
         if [[ $choice == "y" || $choice == "yes" || $choice = "ya" ]] then
