@@ -22,7 +22,7 @@ if [[ $choice == "1" || $choice == "deps" || $choice == "check deps" ]] then
         if ! [[ $(pacman -Qq $dep 2> /dev/null) == "$dep" ]] then
             printf "\e[0;31;1m$dep was not found!\e[0;37;0m\n"
             err+=($dep)
-            printf($dep)
+            echo $dep
         fi
     done
 
