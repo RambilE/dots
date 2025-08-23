@@ -4,7 +4,7 @@
 # 3. remove
 
 
-deplist=("hyprland" "hyprpaper" "hyprpolkitagent" "mako" "cliphist" "syshud" "waybar" "wofi" "foot" "wlogout" "hyprshot" "satty" "qt6ct" "qt5ct" "breeze" "breeze5" "papirus-icon-theme-git" "rose-pine-hyprcursor" "vlc" "thunar" "gvfs" "pavucontrol" "gpu-screen-recorder-gtk" "ttf-0xproto-nerd")
+deplist=("hyprland" "hyprpaper" "hyprpolkitagent" "mako" "cliphist" "syshud" "waybar" "network-manager-applet" "wofi" "foot" "wlogout" "hyprshot" "satty" "qt6ct" "qt5ct" "breeze" "breeze5" "papirus-icon-theme-git" "rose-pine-hyprcursor" "vlc" "thunar" "gvfs" "pavucontrol" "gpu-screen-recorder-gtk" "ttf-0xproto-nerd")
 clear
 printf "\e[0;32;1mRambilE .files installation helper script (github.com/RambilE/dots)\n\e[0;37;0m"
 
