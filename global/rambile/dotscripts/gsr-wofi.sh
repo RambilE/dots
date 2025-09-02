@@ -1,3 +1,4 @@
+#!/usr/bin/env bash
 if [[ $(pidof gpu-screen-recorder-gtk) == "" ]]; then
         nohup gpu-screen-recorder-gtk &
         exit

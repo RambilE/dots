@@ -32,8 +32,7 @@
     
     // Modules configuration
     "custom/fullscreen": {
-        "exec": "~/.config/hypr/rambile/dotscripts/fullscreencheck.sh",
-        "signal": 8,
+        "exec": "~/.config/hypr/rambile/dotscripts/fullscreencheck.lua",
     },
     "hyprland/window": {
        "icon": false,
@@ -138,8 +137,8 @@
         "format": "{dynamic}",
         "dynamic-order": ["artist", "title"],
         "player": "naviterm",
-        "dynamic-len": 35,
-        "title-len": 35,
+        "dynamic-len": 45,
+        "title-len": 45,
         "artist-len": 30,
     }
 }
