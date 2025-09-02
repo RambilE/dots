@@ -72,7 +72,7 @@ elif [[ $choice == "2" || $choice == "install" ]] then
                  ~/.config/satty \
                  ~/.config/foot \
                  ~/.config/hypr/rambile/dotscripts \
-                 ~/.config/hypr/rambile/wall \
+                 ~/.config/hypr/rambile/wall
                  
         printf "\e[3mLinking files...\e[0m\n"
 
