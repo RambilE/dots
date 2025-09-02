@@ -9,7 +9,7 @@ clear
 printf "\e[0;32;1mRambilE .files installation helper script (github.com/RambilE/dots)\n\e[0;37;0m"
 
 function main {
-printf "1. Check deps\n2. Install dots\n3. Remove dots\n"
+    printf "1. Check deps\n2. Install dots\n3. Remove dots\n4. Lua update (if possible)\n"
 read -p "Your choice: " choice
 
 # deps
@@ -43,7 +43,6 @@ if [[ $choice == "1" || $choice == "deps" || $choice == "check deps" ]] then
     fi
 
 elif [[ $choice == "2" || $choice == "install" ]] then
-        printf "\e[0;31;1mBecause i'm lazy to do it the other way, you need to clone this repo in ~/code/ in order for some bash scripts and wallpapers to work.\nIf you want them to work from other directories, you'll need to edit ~/.config/hypr/hyprpaper.conf and ~/.config/hypr/binds_util.conf (line 21) and copy these files where you want them to be.\n\e[0;37;0m"
         read -p "Please press anything to continue to installation. This will link files from ./global/ to where they need to be. This will also copy all relevant dotfiles to ./backup/ dir, and copy it somewhere if you will install multiple times. Please be sure that you're installing this from the same block device that your ~/.config/ directory is as it is hard links. "
         
         printf "\e[3mBacking up files...\e[3m\n"
@@ -71,7 +70,9 @@ elif [[ $choice == "2" || $choice == "install" ]] then
                  ~/.config/gtk-3.0 \
                  ~/.config/gtk-4.0 \
                  ~/.config/satty \
-                 ~/.config/foot 
+                 ~/.config/foot \
+                 ~/.config/hypr/rambile/dotscripts \
+                 ~/.config/hypr/rambile/wall \
                  
         printf "\e[3mLinking files...\e[0m\n"
 
@@ -86,6 +87,8 @@ elif [[ $choice == "2" || $choice == "install" ]] then
         ln -f ./global/gtk-4.0/* ~/.config/gtk-4.0/
         ln -f ./global/satty/* ~/.config/satty/
         ln -f ./global/foot/* ~/.config/foot/
+        ln -f ./global/rambile/wall/* ~/.config/hypr/rambile/wall
+        ln -f ./global/rambile/dotscripts/* ~/.config/hypr/rambile/dotscripts
         
         printf "idk if it linked everything, go test it (and relogin just in case)\n\n"
         main
@@ -122,14 +125,20 @@ elif [[ $choice == "3" || $choice == "remove" || $choice == "rm" ]] then
         cp -r ./backup/gtk-4.0 ~/.config/gtk-4.0
         cp -r ./backup/satty ~/.config/satty
         cp -r ./backup/foot ~/.config/foot
+        
+        main
     fi
+elif [[ $choice == "4" || $choice == "lua" || $choice == "lua update" ]] then
+    ./luastuff.sh
+    echo
+    main
 else
     main
 fi
 }
 
 if [[ $(pacman -Qq yay 2> /dev/null ) == "yay" ]] then  
-    main
+    echo 
 else
     read -p "Please install yay first! Do you want to do it now? (y/n) " choice
     if [[ $choice == "y" || $choice == "yes" || $choice = "ya" ]] then
@@ -142,3 +151,15 @@ else
     fi
 fi
 
+if [[ $(pacman -Qq luarocks 2> /dev/null ) == "luarocks" ]] then  
+    main
+else
+    read -p "Please install lua libs first! Do you want to do it now? (y/n) " choice
+    if [[ $choice == "y" || $choice == "yes" || $choice = "ya" ]] then
+        ./luastuff.sh
+        main
+    elif [[ $choice == "n" || $choice == "no" || $choice == "nah" ]] then
+        printf "\n"
+        main
+    fi
+fi

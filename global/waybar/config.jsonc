@@ -32,7 +32,7 @@
     
     // Modules configuration
     "custom/fullscreen": {
-        "exec": "~/code/dots/global/dotscripts/fullscreencheck.sh",
+        "exec": "~/.config/hypr/rambile/dotscripts/fullscreencheck.sh",
         "signal": 8,
     },
     "hyprland/window": {
