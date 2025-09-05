@@ -48,7 +48,9 @@ if [[ $choice == "1" || $choice == "deps" || $choice == "check deps" ]] then
     fi
 
 elif [[ $choice == "2" || $choice == "install" ]] then
-        read -p "Please press anything to continue to installation. This will link files from ./global/ to where they need to be. This will also copy all relevant dotfiles to ./backup/ dir, and copy it somewhere if you will install multiple times. Please be sure that you're installing this from the same block device that your ~/.config/ directory is as it is hard links. "
+        printf "This will link files from ./global/ to where they need to be. This will also copy all relevant dotfiles to ./backup/ dir, and copy it somewhere if you will install multiple times. Please be sure that you're installing this from the same block device that your ~/.config/ directory is as it is hard links. \n" | fold -s -w 80
+        read -n 1 -s -r -p "Press any key to continue"
+
         
         printf "\e[3mBacking up files...\e[3m\n"
         mkdir backup 2> /dev/null
@@ -90,8 +92,9 @@ elif [[ $choice == "2" || $choice == "install" ]] then
         main
 
 elif [[ $choice == "3" || $choice == "remove" || $choice == "rm" ]] then
-    printf "Please be sure that ./backup/ directory has your previous files before you proceed. \e[0;31;1m\nThis action WILL REMOVE PREVIOUS FILES THAT WERE ~/.config/ AND CAN CAUSE LOSES IF YOU DIDN'T BACKUP YOUR CONFIG FILES. ONLY DO THIS IF YOU ARE SURE THAT ./backup/ HAS ALL YOUR NEEDED FILES.\e[0;37;0m\n"
+    printf "Please be sure that ./backup/ directory has your previous files before you proceed. \e[0;31;1m\nThis action WILL REMOVE PREVIOUS FILES THAT WERE ~/.config/ AND CAN CAUSE LOSES IF YOU DIDN'T BACKUP YOUR CONFIG FILES. ONLY DO THIS IF YOU ARE SURE THAT ./backup/ HAS ALL YOUR NEEDED FILES.\e[0;37;0m\n" | fold -s -w 80
     read -p "ARE YOU SURE? "
+    read -n 1 -s -r -p "Press any key to continue"
     if [[ -d ./backup ]] then
         printf "\e[3mBackup directory found. Proceeding to removal.\e[0m\n"
         printf "\e[3mDeleting files in ~/.config/ ...\e[0m\n"
