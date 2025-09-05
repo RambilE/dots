@@ -48,11 +48,11 @@ if [[ $choice == "1" || $choice == "deps" || $choice == "check deps" ]] then
     fi
 
 elif [[ $choice == "2" || $choice == "install" ]] then
-        printf "This will link files from ./global/ to where they need to be. This will also copy all relevant dotfiles to ./backup/ dir, and copy it somewhere if you will install multiple times. Please be sure that you're installing this from the same block device that your ~/.config/ directory is as it is hard links. \n" | fold -s -w 80
+        printf "This will link files from ./global/ to where they need to be. This will also copy all relevant dotfiles to ./backup/ dir, and copy it somewhere if you will install multiple times. Please be sure that you're installing this from the same block device that your ~/.config/ directory is as it is hard links. \n\n" | fold -s -w 80
         read -n 1 -s -r -p "Press any key to continue"
 
         
-        printf "\e[3mBacking up files...\e[3m\n"
+        printf "\e[3m\n\nBacking up files...\e[3m\n"
         mkdir backup 2> /dev/null
         cp -r ~/.config/hypr ./backup
         cp -r ~/.config/wlogout ./backup
@@ -88,7 +88,7 @@ elif [[ $choice == "2" || $choice == "install" ]] then
         ln -f ./global/rambile/wall/* ~/.config/hypr/rambile/wall
         ln -f ./global/rambile/dotscripts/* ~/.config/hypr/rambile/dotscripts
         
-        printf "idk if it linked everything, go test it (and relogin just in case)\nAfter installation you should go to qt6ct and nwg-look to apply catppuccin themes.\n\n"
+        printf "\nidk if it linked everything, go test it (and relogin just in case)\nAfter installation you should go to qt6ct and nwg-look to apply catppuccin themes.\n\n"
         main
 
 elif [[ $choice == "3" || $choice == "remove" || $choice == "rm" ]] then
