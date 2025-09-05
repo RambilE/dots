@@ -121,7 +121,7 @@
        "format-muted": " {volume}%",
        "tooltip-format": "{node_name}",
        "scroll-step": 5,
-       "on-click": "pavucontrol --tab 3",
+       "on-click": "~/.config/hypr/rambile/dotscripts/wiremix-foot.sh",
        "on-click-right": "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle",
     },
     "wireplumber#source": {
@@ -130,7 +130,7 @@
        "format-muted": "󰍭",
        "tooltip-format": "{node_name} - {volume}%",
        "scroll-step": 5,
-       "on-click": "pavucontrol --tab 4",
+       "on-click": "~/.config/hypr/rambile/dotscripts/wiremix-foot.sh",
        "on-click-right": "wpctl set-mute @DEFAULT_AUDIO_SOURCE@ toggle",
     },
     "mpris": {

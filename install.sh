@@ -3,8 +3,13 @@
 # 2. install
 # 3. remove
 
+if ! [[ $(pwd) == $( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd ) ]] then
+    printf "\e[0;31;1mPlease run this script from the folder that you've installed it into.\e[0;37;0m\n"
+    exit
+fi
 
-deplist=("hyprland" "hyprpaper" "hyprpolkitagent" "mako" "cliphist" "syshud" "waybar" "network-manager-applet" "wofi" "foot" "wlogout" "hyprshot" "satty" "qt6ct" "qt5ct" "breeze" "breeze5" "papirus-icon-theme-git" "rose-pine-hyprcursor" "vlc" "thunar" "gvfs" "pavucontrol" "gpu-screen-recorder-gtk" "ttf-0xproto-nerd")
+
+deplist=("hyprland" "hyprpaper" "hyprpolkitagent" "mako" "cliphist" "syshud" "waybar" "network-manager-applet" "wofi" "foot" "wlogout" "hyprshot" "satty" "qt6ct" "qt5ct" "breeze" "breeze5" "catppuccin-gtk-theme-mocha" "catppuccin-qt5ct-git" "papirus-icon-theme-git" "rose-pine-hyprcursor" "thunar" "gvfs" "wiremix" "gpu-screen-recorder-gtk" "ttf-0xproto-nerd")
 clear
 printf "\e[0;32;1mRambilE .files installation helper script (github.com/RambilE/dots)\n\e[0;37;0m"
 
