@@ -9,7 +9,7 @@ if ! [[ $(pwd) == $( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null &&
 fi
 
 
-deplist=("hyprland" "hyprpaper" "hyprpolkitagent" "mako" "cliphist" "syshud" "waybar" "network-manager-applet" "wofi" "foot" "wlogout" "hyprshot" "satty" "qt6ct" "qt5ct" "breeze" "breeze5" "catppuccin-gtk-theme-mocha" "catppuccin-qt5ct-git" "papirus-icon-theme-git" "rose-pine-hyprcursor" "thunar" "gvfs" "wiremix" "gpu-screen-recorder-gtk" "ttf-0xproto-nerd")
+deplist=("hyprland" "hyprpaper" "hyprpolkitagent" "mako" "cliphist" "syshud" "waybar" "network-manager-applet" "wofi" "foot" "wlogout" "hyprshot" "satty" "qt6ct" "qt5ct" "breeze" "breeze5" "catppuccin-gtk-theme-mocha" "catppuccin-qt5ct-git" "nwg-look" "papirus-icon-theme-git" "rose-pine-hyprcursor" "thunar" "gvfs" "wiremix" "gpu-screen-recorder-gtk" "ttf-0xproto-nerd")
 clear
 printf "\e[0;32;1mRambilE .files installation helper script (github.com/RambilE/dots)\n\e[0;37;0m"
 
@@ -57,10 +57,7 @@ elif [[ $choice == "2" || $choice == "install" ]] then
         cp -r ~/.config/wofi ./backup
         cp -r ~/.config/waybar ./backup
         cp -r ~/.config/fastfetch ./backup
-        cp -r ~/.config/qt6ct ./backup
         cp -r ~/.config/mako ./backup
-        cp -r ~/.config/gtk-3.0 ./backup
-        cp -r ~/.config/gtk-4.0 ./backup
         cp -r ~/.config/satty ./backup
         cp -r ~/.config/foot ./backup
 
@@ -70,10 +67,7 @@ elif [[ $choice == "2" || $choice == "install" ]] then
                  ~/.config/wofi \
                  ~/.config/waybar \
                  ~/.config/fastfetch \
-                 ~/.config/qt6ct/colors \
                  ~/.config/mako \
-                 ~/.config/gtk-3.0 \
-                 ~/.config/gtk-4.0 \
                  ~/.config/satty \
                  ~/.config/foot \
                  ~/.config/hypr/rambile/dotscripts \
@@ -86,16 +80,13 @@ elif [[ $choice == "2" || $choice == "install" ]] then
         ln -f ./global/wofi/* ~/.config/wofi/
         ln -f ./global/waybar/* ~/.config/waybar/
         ln -f ./global/fastfetch/* ~/.config/fastfetch/
-        ln -f ./global/qt/* ~/.config/qt6ct/colors/
         ln -f ./global/mako/* ~/.config/mako/
-        ln -f ./global/gtk-3.0/* ~/.config/gtk-3.0/
-        ln -f ./global/gtk-4.0/* ~/.config/gtk-4.0/
         ln -f ./global/satty/* ~/.config/satty/
         ln -f ./global/foot/* ~/.config/foot/
         ln -f ./global/rambile/wall/* ~/.config/hypr/rambile/wall
         ln -f ./global/rambile/dotscripts/* ~/.config/hypr/rambile/dotscripts
         
-        printf "idk if it linked everything, go test it (and relogin just in case)\n\n"
+        printf "idk if it linked everything, go test it (and relogin just in case)\nAfter installation you should go to qt6ct and nwg-look to apply catppuccin themes.\n\n"
         main
 
 elif [[ $choice == "3" || $choice == "remove" || $choice == "rm" ]] then
@@ -110,10 +101,7 @@ elif [[ $choice == "3" || $choice == "remove" || $choice == "rm" ]] then
         rm -rf ~/.config/wofi/
         rm -rf ~/.config/waybar/
         rm -rf ~/.config/fastfetch/
-        rm -rf ~/.config/qt6ct/colors/
         rm -rf ~/.config/mako/
-        rm -rf ~/.config/gtk-3.0/
-        rm -rf ~/.config/gtk-4.0/
         rm -rf ~/.config/satty/
         rm -rf ~/.config/foot/
         
@@ -124,10 +112,7 @@ elif [[ $choice == "3" || $choice == "remove" || $choice == "rm" ]] then
         cp -r ./backup/wofi ~/.config/wofi
         cp -r ./backup/waybar ~/.config/waybar
         cp -r ./backup/fastfetch ~/.config/fastfetch
-        cp -r ./backup/qt6ct ~/.config/
         cp -r ./backup/mako ~/.config/mako
-        cp -r ./backup/gtk-3.0 ~/.config/gtk-3.0
-        cp -r ./backup/gtk-4.0 ~/.config/gtk-4.0
         cp -r ./backup/satty ~/.config/satty
         cp -r ./backup/foot ~/.config/foot
         
