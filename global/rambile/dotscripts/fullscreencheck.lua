@@ -17,19 +17,23 @@ local wsCache = {0,0,0,0,0,0,0,0,0,0}
 --local fsState = 0
 while true do
     bytes = assert(socket.recv(fd, 1337))
-
+    --  print(bytes)
     for i in string.gmatch(bytes, "%S+") do
         if string.find(i, "^workspace>>%d$") then -- find workspace that we are switching to
             ws,_ = (string.gsub(i,"workspace>>",""))
         end
-        if string.find(i,"^fullscreen>>%d$") then -- find fullscreen state
+        if string.find(i, "^fullscreen>>%d$") then -- find fullscreen state
             fsState,_ = (string.gsub(i,"fullscreen>>",""))
             if ws and fsState then
                 wsCache[ws] = fsState
             end
         end
+        if string.find(i, "^movewindow>>*,%d$") then
+            nextWs,_ = (string.gsub(i,"movewindow>>",""))
+            print(nextWs)
+        end
     end
-    --print(ws, fsState, wsCache[ws])
+    -- print(ws, fsState, wsCache[ws])
     --print(type(ws))
 
     if wsCache[ws] == "0" or wsCache[ws] == nil then

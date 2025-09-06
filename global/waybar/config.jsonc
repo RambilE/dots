@@ -121,8 +121,8 @@
        "format-muted": " {volume}%",
        "tooltip-format": "{node_name}",
        "scroll-step": 5,
-       "on-click": "~/.config/hypr/rambile/dotscripts/wiremix-foot.sh",
-       "on-click-right": "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle",
+       "on-click-right": "~/.config/hypr/rambile/dotscripts/wiremix-foot.sh",
+       "on-click": "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle",
     },
     "wireplumber#source": {
        "node-type": "Audio/Source",
@@ -130,15 +130,15 @@
        "format-muted": "󰍭",
        "tooltip-format": "{node_name} - {volume}%",
        "scroll-step": 5,
-       "on-click": "~/.config/hypr/rambile/dotscripts/wiremix-foot.sh",
-       "on-click-right": "wpctl set-mute @DEFAULT_AUDIO_SOURCE@ toggle",
+       "on-click-right": "~/.config/hypr/rambile/dotscripts/wiremix-foot.sh",
+       "on-click": "wpctl set-mute @DEFAULT_AUDIO_SOURCE@ toggle",
     },
     "mpris": {
         "format": "{dynamic}",
         "dynamic-order": ["artist", "title"],
         "player": "naviterm",
-        "dynamic-len": 45,
-        "title-len": 45,
+        "dynamic-len": 40,
+        "title-len": 40,
         "artist-len": 30,
     }
 }
