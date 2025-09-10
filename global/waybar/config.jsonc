@@ -142,8 +142,8 @@
         "format": "{dynamic}",
         "dynamic-order": ["artist", "title"],
         "player": "naviterm",
-        "dynamic-len": 40,
-        "title-len": 40,
+        "dynamic-len": 35,
+        "title-len": 35,
         "artist-len": 30,
     }
 }
