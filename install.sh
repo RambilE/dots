@@ -12,7 +12,7 @@ fi
 deplist=("hyprland" "hyprpaper" "hyprpolkitagent" "hyprsunset"  # hypr stuff
          "mako" "syshud" "waybar" "network-manager-applet" "wlogout"  # what you see most of the time
          "wofi" "wofimoji" "wofi-calc" "cliphist"  # wofi stuff
-         "foot" "flameshot" "nwg-look" "qt6ct" "qt5ct" "thunar" "gvfs" "wiremix" "gpu-screen-recorder-gtk"  # functional software
+         "foot" "flameshot" "nwg-look" "qt6ct" "qt5ct" "thunar" "gvfs" "wiremix" "gpu-screen-recorder-gtk" "neovim"  # functional software
          "breeze" "breeze5" "catppuccin-gtk-theme-mocha" "catppuccin-qt5ct-git" "papirus-icon-theme-git" "rose-pine-hyprcursor" "ttf-0xproto-nerd") # theming stuff
 clear
 printf "\e[0;32;1mRambilE .files installation helper script (github.com/RambilE/dots)\n\e[0;37;0m"
@@ -66,6 +66,7 @@ elif [[ $choice == "2" || $choice == "install" ]] then
         cp -r ~/.config/mako ./backup
         cp -r ~/.config/satty ./backup
         cp -r ~/.config/foot ./backup
+        cp -r ~/.config/nvim ./backup
 
         printf "\e[3mCreating directories...\e[0m\n"
         mkdir -p ~/.config/hypr \
@@ -77,7 +78,8 @@ elif [[ $choice == "2" || $choice == "install" ]] then
                  ~/.config/satty \
                  ~/.config/foot \
                  ~/.config/hypr/rambile/dotscripts \
-                 ~/.config/hypr/rambile/wall
+                 ~/.config/hypr/rambile/wall \
+                 ~/.config/nvim
                  
         printf "\e[3mLinking files...\e[0m\n"
 
@@ -91,6 +93,7 @@ elif [[ $choice == "2" || $choice == "install" ]] then
         ln -f ./global/foot/* ~/.config/foot/
         ln -f ./global/rambile/wall/* ~/.config/hypr/rambile/wall
         ln -f ./global/rambile/dotscripts/* ~/.config/hypr/rambile/dotscripts
+        ln -f ./global/nvim/init.lua ~/.config/nvim/
         
         printf "\nidk if it linked everything, go test it (and relogin just in case)\nAfter installation you should go to qt6ct and nwg-look to apply catppuccin themes.\n\n"
         main
@@ -111,6 +114,7 @@ elif [[ $choice == "3" || $choice == "remove" || $choice == "rm" ]] then
         rm -rf ~/.config/mako/
         rm -rf ~/.config/satty/
         rm -rf ~/.config/foot/
+        rm -rf ~/.config/nvim/
         
         printf "\e[3mCopying back old files...\e[0m\n"
         
@@ -122,6 +126,7 @@ elif [[ $choice == "3" || $choice == "remove" || $choice == "rm" ]] then
         cp -r ./backup/mako ~/.config/mako
         cp -r ./backup/satty ~/.config/satty
         cp -r ./backup/foot ~/.config/foot
+        cp -r ./backup/nvim ~/.config/nvim
         
         main
     fi
