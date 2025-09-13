@@ -64,7 +64,6 @@ elif [[ $choice == "2" || $choice == "install" ]] then
         cp -r ~/.config/waybar ./backup
         cp -r ~/.config/fastfetch ./backup
         cp -r ~/.config/mako ./backup
-        cp -r ~/.config/satty ./backup
         cp -r ~/.config/foot ./backup
         cp -r ~/.config/nvim ./backup
 
@@ -75,7 +74,6 @@ elif [[ $choice == "2" || $choice == "install" ]] then
                  ~/.config/waybar \
                  ~/.config/fastfetch \
                  ~/.config/mako \
-                 ~/.config/satty \
                  ~/.config/foot \
                  ~/.config/hypr/rambile/dotscripts \
                  ~/.config/hypr/rambile/wall \
@@ -89,7 +87,6 @@ elif [[ $choice == "2" || $choice == "install" ]] then
         ln -f ./global/waybar/* ~/.config/waybar/
         ln -f ./global/fastfetch/* ~/.config/fastfetch/
         ln -f ./global/mako/* ~/.config/mako/
-        ln -f ./global/satty/* ~/.config/satty/
         ln -f ./global/foot/* ~/.config/foot/
         ln -f ./global/rambile/wall/* ~/.config/hypr/rambile/wall
         ln -f ./global/rambile/dotscripts/* ~/.config/hypr/rambile/dotscripts
@@ -112,7 +109,6 @@ elif [[ $choice == "3" || $choice == "remove" || $choice == "rm" ]] then
         rm -rf ~/.config/waybar/
         rm -rf ~/.config/fastfetch/
         rm -rf ~/.config/mako/
-        rm -rf ~/.config/satty/
         rm -rf ~/.config/foot/
         rm -rf ~/.config/nvim/
         
@@ -124,7 +120,6 @@ elif [[ $choice == "3" || $choice == "remove" || $choice == "rm" ]] then
         cp -r ./backup/waybar ~/.config/waybar
         cp -r ./backup/fastfetch ~/.config/fastfetch
         cp -r ./backup/mako ~/.config/mako
-        cp -r ./backup/satty ~/.config/satty
         cp -r ./backup/foot ~/.config/foot
         cp -r ./backup/nvim ~/.config/nvim
         
