@@ -38,6 +38,8 @@
 
     "custom/fullscreen": {
         "exec": "~/.config/hypr/rambile/dotscripts/fullscreencheck.lua",
+        "on-click": "hyprctl dispatch fullscreen 1",
+        "on-click-right": "hyprctl dispatch fullscreen",
     },
     "hyprland/window": {
        "icon": false,
