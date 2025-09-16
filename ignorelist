@@ -1,0 +1,25 @@
+# put here things that you don't want to get installed
+# you can safely include these if you want:
+# syshud
+# wofimoji
+# wofi-calc
+# flameshot
+# nwg-look
+# qt6ct
+# qt5ct
+# thunar
+# gvfs
+# wiremix
+# gpu-screen-recorder-gtk
+# neovim
+# swayimg
+# breeze
+# breeze5"
+# catppuccin-gtk-theme-mocha
+# catppuccin-qt5ct-git
+# papirus-icon-theme-git
+# rose-pine-hyprcursor
+# network-manager-applet
+# wlogout
+# you won't have much functionality but the hyprland part will work just fine. Also syshud is recommended to ignore if you want to have as much ram as possible.
+# Put what you want to ignore below (or anywhere you want without a comment (#)), in one line, ex: waybar gpu-screen-recorder-gtk wlogout

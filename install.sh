@@ -14,8 +14,25 @@ deplist=("hyprland" "hyprpaper" "hyprpolkitagent" "hyprsunset"  # hypr stuff
          "wofi" "wofimoji" "wofi-calc" "cliphist"  # wofi stuff
          "foot" "flameshot" "nwg-look" "qt6ct" "qt5ct" "thunar" "gvfs" "wiremix" "gpu-screen-recorder-gtk" "neovim" "swayimg" # functional software
          "breeze" "breeze5" "catppuccin-gtk-theme-mocha" "catppuccin-qt5ct-git" "papirus-icon-theme-git" "rose-pine-hyprcursor" "ttf-0xproto-nerd") # theming stuff
+
+ignorelist=( $(grep -Ev '^(;|#|//)' ignorelist) )
+
+for target in "${ignorelist[@]}"; do
+  for i in "${!deplist[@]}"; do
+    if [[ ${deplist[i]} = $target ]]; then
+      unset 'deplist[i]'
+    fi
+  done
+done
+
 clear
 printf "\e[0;32;1mRambilE .files installation helper script (github.com/RambilE/dots)\n\e[0;37;0m"
+
+if ! [[ $(echo ${ignorelist[@]}) == "" ]] then
+    printf "\e[0;31;1mThe following packages are to be ignored: $(echo ${ignorelist[@]})\e[0;37;0m" | fold -s -w 80
+else
+    printf "\e[0;31;1mNo packages to ignore in ignorelist file\e[0;37;0m"
+fi
 
 function main {
     printf "1. Check deps\n2. Install dots\n3. Remove dots\n4. Lua update (if possible)\n"
