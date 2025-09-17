@@ -165,7 +165,7 @@ bottom_right = name,status
 # Viewer mode key binding configuration: key = action [parameters]
 ################################################################################
 [keys.viewer]
-Ctrl+c = exec wl-copy %
+Ctrl+c = exec wl-copy < "%"
 F1 = help
 Home = first_file
 End = last_file
