@@ -10,6 +10,8 @@ vim.o.shiftwidth = 4
 vim.o.expandtab = true
 vim.o.termguicolors = true
 vim.o.foldmethod = "marker"
+vim.o.lmap = "йЙцЦуУкКеЕнНгГшШщЩзЗхХъЪфФыЫвВаАпПрРоОлЛдДжЖэЭяЯчЧсСмМиИтТьЬбБюЮ.\\,;qQwWeErRtTyYuUiIoOpP[{]}aAsSdDfFgGhHjJkKlL;:'\"zZxXcCvVbBnNmM\\,<.>/?"
+
 vim.cmd('packadd! nohlsearch')
 
 colorscheme = catppuccin -- catppuccin-latte, catppuccin-frappe, catppuccin-macchiato, catppuccin-mocha
