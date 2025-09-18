@@ -3,11 +3,16 @@
 # 2. install
 # 3. remove
 
+# text stuff
+tclr () { printf "\e[0;37;0m" ; }
+tred () { printf "\e[0;31;1m" ; }
+tgrn () { printf "\e[0;32;1m" ; }
+tita () { printf "\e[3m" ; }
+
 if ! [[ $(pwd) == $( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd ) ]] then
     printf "\e[0;31;1mPlease run this script from the folder that you've installed it into.\e[0;37;0m\n"
     exit
 fi
-
 
 deplist=("hyprland" "hyprpaper" "hyprpolkitagent" "hyprsunset"  # hypr stuff
          "mako" "syshud" "waybar" "network-manager-applet" "wlogout"  # what you see most of the time
@@ -26,12 +31,12 @@ for target in "${ignorelist[@]}"; do
 done
 
 clear
-printf "\e[0;32;1mRambilE .files installation helper script (github.com/RambilE/dots)\n\e[0;37;0m"
+printf "$(tgrn)RambilE .files installation helper script (github.com/RambilE/dots)$(tclr)\n"
 
 if ! [[ $(echo ${ignorelist[@]}) == "" ]] then
-    printf "\e[0;31;1mThe following packages are to be ignored: $(echo ${ignorelist[@]})\e[0;37;0m" | fold -s -w 80
+    printf "$(tred)The following packages are to be ignored: $(echo ${ignorelist[@]})$(tclr)" | fold -s -w 80
 else
-    printf "\e[0;31;1mNo packages to ignore in ignorelist file\n\e[0;37;0m"
+    printf "$(tred)No packages to ignore in ignorelist file$(tclr)\n"
 fi
 
 function main {
@@ -46,7 +51,7 @@ if [[ $choice == "1" || $choice == "deps" || $choice == "check deps" ]] then
     for dep in "${deplist[@]}";
     do
         if ! [[ $(pacman -Qq $dep 2> /dev/null) == "$dep" ]] then
-            printf "\e[0;31;1m$dep was not found!\e[0;37;0m\n"
+            printf "$(tred)$dep was not found!$(tclr)\n"
             err+=($dep)
         fi
     done
@@ -64,7 +69,7 @@ if [[ $choice == "1" || $choice == "deps" || $choice == "check deps" ]] then
             exit 0
         fi
     else
-        printf "\e[3mAll dependencies are installed!\e[0m\n\n"
+        printf "$(tita)All dependencies are installed!$(tclr)\n\n"
         main
     fi
 
@@ -73,7 +78,7 @@ elif [[ $choice == "2" || $choice == "install" ]] then
         read -n 1 -s -r -p "Press any key to continue"
 
         
-        printf "\e[3m\n\nBacking up files...\e[3m\n"
+        printf "$(tita)\n\nBacking up files...$(tclr)\n"
         mkdir backup 2> /dev/null
         cp -r ~/.config/hypr ./backup
         cp -r ~/.config/wlogout ./backup
@@ -85,7 +90,7 @@ elif [[ $choice == "2" || $choice == "install" ]] then
         cp -r ~/.config/nvim ./backup
         cp -r ~/.config/swayimg ./backup
 
-        printf "\e[3mCreating directories...\e[0m\n"
+        printf "$(tita)Creating directories...$(tclr)\n"
         mkdir -p ~/.config/hypr \
                  ~/.config/wlogout \
                  ~/.config/wofi \
@@ -98,7 +103,7 @@ elif [[ $choice == "2" || $choice == "install" ]] then
                  ~/.config/nvim \
                  ~/.config/swayimg
                  
-        printf "\e[3mLinking files...\e[0m\n"
+        printf "$(tita)Linking files...$(tclr)\n"
 
         ln -f ./global/hypr/* ~/.config/hypr/
         ln -f ./global/wlogout/* ~/.config/wlogout/
@@ -116,12 +121,12 @@ elif [[ $choice == "2" || $choice == "install" ]] then
         main
 
 elif [[ $choice == "3" || $choice == "remove" || $choice == "rm" ]] then
-    printf "Please be sure that ./backup/ directory has your previous files before you proceed. \e[0;31;1m\nThis action WILL REMOVE PREVIOUS FILES THAT WERE ~/.config/ AND CAN CAUSE LOSES IF YOU DIDN'T BACKUP YOUR CONFIG FILES. ONLY DO THIS IF YOU ARE SURE THAT ./backup/ HAS ALL YOUR NEEDED FILES.\e[0;37;0m\n" | fold -s -w 80
+    printf "Please be sure that ./backup/ directory has your previous files before you proceed. $(tred)\nThis action WILL REMOVE PREVIOUS FILES THAT WERE ~/.config/ AND CAN CAUSE LOSES IF YOU DIDN'T BACKUP YOUR CONFIG FILES. ONLY DO THIS IF YOU ARE SURE THAT ./backup/ HAS ALL YOUR NEEDED FILES.$(tclr)\n" | fold -s -w 80
     read -p "ARE YOU SURE? "
     read -n 1 -s -r -p "Press any key to continue"
     if [[ -d ./backup ]] then
-        printf "\e[3mBackup directory found. Proceeding to removal.\e[0m\n"
-        printf "\e[3mDeleting files in ~/.config/ ...\e[0m\n"
+        printf "$(tita)Backup directory found. Proceeding to removal.$(tclr)\n"
+        printf "$(tita)Deleting files in ~/.config/ ...$(tclr)\n"
         
         rm -rf ~/.config/hypr/
         rm -rf ~/.config/wlogout/
@@ -133,7 +138,7 @@ elif [[ $choice == "3" || $choice == "remove" || $choice == "rm" ]] then
         rm -rf ~/.config/nvim/
         rm -rf ~/.config/swayimg/
         
-        printf "\e[3mCopying back old files...\e[0m\n"
+        printf "$(tita)Copying back old files...$(tclr)\n"
         
         cp -r ./backup/hypr ~/.config/hypr
         cp -r ./backup/wlogout ~/.config/wlogout
@@ -156,7 +161,6 @@ else
 fi
 }
 
-#if [[ $(which yay 2> /dev/null ) == "/usr/bin/yay" ]] then  
 if [[ $(which yay) ]] then  
     echo 
 else
