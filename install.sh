@@ -31,7 +31,7 @@ printf "\e[0;32;1mRambilE .files installation helper script (github.com/RambilE/
 if ! [[ $(echo ${ignorelist[@]}) == "" ]] then
     printf "\e[0;31;1mThe following packages are to be ignored: $(echo ${ignorelist[@]})\e[0;37;0m" | fold -s -w 80
 else
-    printf "\e[0;31;1mNo packages to ignore in ignorelist file\e[0;37;0m"
+    printf "\e[0;31;1mNo packages to ignore in ignorelist file\n\e[0;37;0m"
 fi
 
 function main {
@@ -156,7 +156,8 @@ else
 fi
 }
 
-if [[ $(pacman -Qq yay 2> /dev/null ) == "yay" ]] then  
+#if [[ $(which yay 2> /dev/null ) == "/usr/bin/yay" ]] then  
+if [[ $(which yay) ]] then  
     echo 
 else
     read -p "Please install yay first! Do you want to do it now? (y/n) " choice
