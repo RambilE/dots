@@ -10,7 +10,7 @@ tgrn () { printf "\e[0;32;1m" ; }
 tita () { printf "\e[3m" ; }
 
 if ! [[ $(pwd) == $( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd ) ]] then
-    printf "\e[0;31;1mPlease run this script from the folder that you've installed it into.\e[0;37;0m\n"
+    printf "$(tred)Please run this script from the folder that you've installed it into.$(tclr)\n"
     exit
 fi
 
