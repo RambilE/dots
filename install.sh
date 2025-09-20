@@ -3,6 +3,8 @@
 # 2. install
 # 3. remove
 
+
+
 # text stuff
 tclr () { printf "\e[0;37;0m" ; }
 tred () { printf "\e[0;31;1m" ; }
@@ -14,13 +16,11 @@ if ! [[ $(pwd) == $( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null &&
     exit
 fi
 
-deplist=("hyprland" "hyprpaper" "hyprpolkitagent" "hyprsunset"  # hypr stuff
-         "mako" "syshud" "waybar" "network-manager-applet" "wlogout"  # what you see most of the time
-         "wofi" "wofimoji" "wofi-calc" "cliphist"  # wofi stuff
-         "foot" "flameshot" "nwg-look" "qt6ct" "qt5ct" "thunar" "gvfs" "wiremix" "gpu-screen-recorder-gtk" "neovim" "swayimg" # functional software
-         "breeze" "breeze5" "catppuccin-gtk-theme-mocha" "catppuccin-qt5ct-git" "papirus-icon-theme-git" "rose-pine-hyprcursor" "ttf-0xproto-nerd") # theming stuff
+source config.sh
+ignorepkgs
+dependencies
 
-ignorelist=( $(grep -Ev '^(;|#|//)' ignorelist) )
+#ignorelist=( $(grep -Ev '^(;|#|//)' ignorelist) )
 
 for target in "${ignorelist[@]}"; do
   for i in "${!deplist[@]}"; do
