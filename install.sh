@@ -34,7 +34,7 @@ clear
 printf "$(tgrn)RambilE .files installation helper script (github.com/RambilE/dots)$(tclr)\n"
 
 if ! [[ $(echo ${ignorelist[@]}) == "" ]] then
-    printf "$(tred)The following packages are to be ignored: $(echo ${ignorelist[@]})$(tclr)" | fold -s -w 80
+    printf "$(tred)The following packages are to be ignored: $(echo ${ignorelist[@]})$(tclr)\n" | fold -s -w 80
 else
     printf "$(tred)No packages to ignore in ignorelist file$(tclr)\n"
 fi

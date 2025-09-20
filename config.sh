@@ -22,7 +22,7 @@ dependencies () {
 
 ignorepkgs () {
     # example: ignorelist=(hyprland waybar syshud)
-    ignorelist=(waybar syshud)
+    ignorelist=()
 }
 
 paths () {
