@@ -36,9 +36,6 @@ local packer_bootstrap = ensure_packer()
 
 return require('packer').startup(function(use)
   use 'wbthomason/packer.nvim'
-  -- My plugins here
-  -- use 'foo1/bar1.nvim'
-  -- use 'foo2/bar2.nvim'
   use { "catppuccin/nvim", as = "catppuccin" }
   use {
   'nvim-lualine/lualine.nvim',
@@ -51,20 +48,19 @@ return require('packer').startup(function(use)
     end,
   })
 
+require("oil").setup()
+local home = os.getenv("HOME")
+loadfile(home.."/.config/nvim/oilcfg.lua")()
+loadfile(home.."/.config/nvim/lualinecfg.lua")()
+colorscheme = catppuccin -- catppuccin-latte, catppuccin-frappe, catppuccin-macchiato, catppuccin-mocha
+vim.cmd.colorscheme "catppuccin-mocha"
+
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
   if packer_bootstrap then
     require('packer').sync()
   end
 end)
+
+
 -- }}}
-
-require("oil").setup()
-local home = os.getenv("HOME")
-loadfile(home.."/.config/nvim/oilcfg.lua")()
-loadfile(home.."/.config/nvim/lualinecfg.lua")()
-
-
-colorscheme = catppuccin -- catppuccin-latte, catppuccin-frappe, catppuccin-macchiato, catppuccin-mocha
-vim.cmd.colorscheme "catppuccin-mocha"
-
