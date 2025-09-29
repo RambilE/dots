@@ -1,3 +1,5 @@
+-- opts {{{
+
 vim.o.number = true
 vim.o.ignorecase = true
 vim.o.smartcase = true
@@ -11,13 +13,23 @@ vim.o.expandtab = true
 vim.o.termguicolors = true
 vim.o.foldmethod = "marker"
 vim.o.lmap = "йЙцЦуУкКеЕнНгГшШщЩзЗхХъЪфФыЫвВаАпПрРоОлЛдДжЖэЭяЯчЧсСмМиИтТьЬбБюЮ.\\,;qQwWeErRtTyYuUiIoOpP[{]}aAsSdDfFgGhHjJkKlL;:'\"zZxXcCvVbBnNmM\\,<.>/?"
+vim.g.mapleader = " "
+vim.g.maplocalleader = " "
 vim.cmd('packadd! nohlsearch')
+
+-- }}}
 
 vim.api.nvim_create_autocmd('UIEnter', {
   callback = function()
     vim.o.clipboard = 'unnamedplus'
   end,
 })
+
+vim.keymap.set(
+    {"n"},
+    "<leader>e",
+    ":Oil<enter>"
+)
 
 -- packer {{{
 
@@ -36,11 +48,9 @@ local packer_bootstrap = ensure_packer()
 
 return require('packer').startup(function(use)
   use 'wbthomason/packer.nvim'
+  use { 'norcalli/nvim-colorizer.lua' }
   use { "catppuccin/nvim", as = "catppuccin" }
-  use {
-  'nvim-lualine/lualine.nvim',
-  requires = { 'nvim-tree/nvim-web-devicons', opt = true }
-  }
+  use { 'nvim-lualine/lualine.nvim', requires = { 'nvim-tree/nvim-web-devicons', opt = true } }
   use({
     "stevearc/oil.nvim",
     config = function()
@@ -48,12 +58,12 @@ return require('packer').startup(function(use)
     end,
   })
 
-require("oil").setup()
+--require("oil").setup()
 local home = os.getenv("HOME")
 loadfile(home.."/.config/nvim/oilcfg.lua")()
 loadfile(home.."/.config/nvim/lualinecfg.lua")()
-colorscheme = catppuccin -- catppuccin-latte, catppuccin-frappe, catppuccin-macchiato, catppuccin-mocha
-vim.cmd.colorscheme "catppuccin-mocha"
+colorscheme = catppuccin
+vim.cmd.colorscheme "catppuccin-mocha" -- catppuccin-latte, catppuccin-frappe, catppuccin-macchiato, catppuccin-mocha
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
@@ -61,6 +71,5 @@ vim.cmd.colorscheme "catppuccin-mocha"
     require('packer').sync()
   end
 end)
-
 
 -- }}}
