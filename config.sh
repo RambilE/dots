@@ -17,7 +17,7 @@ dependencies () {
              "mako" "syshud" "waybar" "network-manager-applet" "wlogout"  # what you see most of the time
              "wofi" "wofimoji" "wofi-calc" "cliphist"  # wofi stuff
              "foot" "flameshot" "nwg-look" "qt6ct" "qt5ct" "thunar" "gvfs" "wiremix" "gpu-screen-recorder-gtk" "neovim" "swayimg" # functional software
-             "breeze" "breeze5" "catppuccin-gtk-theme-mocha" "catppuccin-qt5ct-git" "papirus-icon-theme-git" "rose-pine-hyprcursor" "ttf-0xproto-nerd") # theming stuff
+             "breeze" "breeze5" "catppuccin-gtk-theme-mocha" "catppuccin-qt5ct-git" "papirus-icon-theme-git" "rose-pine-hyprcursor" "ttf-0xproto-nerd" "ocean-sound-theme")# theming stuff
 }
 
 ignorepkgs () {
