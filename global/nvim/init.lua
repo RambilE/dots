@@ -27,49 +27,66 @@ vim.api.nvim_create_autocmd('UIEnter', {
 
 vim.keymap.set(
     {"n"},
-    "<leader>e",
+    "<C-e>",
     ":Oil<enter>"
 )
 
--- packer {{{
-
-local ensure_packer = function()
-  local fn = vim.fn
-  local install_path = fn.stdpath('data')..'/site/pack/packer/start/packer.nvim'
-  if fn.empty(fn.glob(install_path)) > 0 then
-    fn.system({'git', 'clone', '--depth', '1', 'https://github.com/wbthomason/packer.nvim', install_path})
-    vim.cmd [[packadd packer.nvim]]
-    return true
+-- lazy.nvim {{{
+    -- not plugins {{{
+-- Bootstrap lazy.nvim
+local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
+if not (vim.uv or vim.loop).fs_stat(lazypath) then
+  local lazyrepo = "https://github.com/folke/lazy.nvim.git"
+  local out = vim.fn.system({ "git", "clone", "--filter=blob:none", "--branch=stable", lazyrepo, lazypath })
+  if vim.v.shell_error ~= 0 then
+    vim.api.nvim_echo({
+      { "Failed to clone lazy.nvim:\n", "ErrorMsg" },
+      { out, "WarningMsg" },
+      { "\nPress any key to exit..." },
+    }, true, {})
+    vim.fn.getchar()
+    os.exit(1)
   end
-  return false
 end
+vim.opt.rtp:prepend(lazypath)
+    -- }}}
 
-local packer_bootstrap = ensure_packer()
+require("lazy").setup({
+  spec = {
+    { "catppuccin/nvim", name = "catppuccin", priority = 1000 },
+    { "nvim-lualine/lualine.nvim", dependencies = { 'nvim-tree/nvim-web-devicons' },
+    { "stevearc/oil.nvim", dependencies = { { "nvim-mini/mini.icons", opts = {} } }, lazy = false, },
+    { "norcalli/nvim-colorizer.lua" },
+    { "mrjones2014/smart-splits.nvim" }
+}
+  },
+  install = { colorscheme = { "catppuccin" } },
+  vim.cmd.colorscheme "catppuccin-mocha",
+  -- automatically check for plugin updates
+  checker = { enabled = true },
+})
 
-return require('packer').startup(function(use)
-  use 'wbthomason/packer.nvim'
-  use { 'norcalli/nvim-colorizer.lua' }
-  use { "catppuccin/nvim", as = "catppuccin" }
-  use { 'nvim-lualine/lualine.nvim', requires = { 'nvim-tree/nvim-web-devicons', opt = true } }
-  use({
-    "stevearc/oil.nvim",
-    config = function()
-      require("oil").setup()
-    end,
-  })
-
---require("oil").setup()
 local home = os.getenv("HOME")
 loadfile(home.."/.config/nvim/oilcfg.lua")()
 loadfile(home.."/.config/nvim/lualinecfg.lua")()
-colorscheme = catppuccin
-vim.cmd.colorscheme "catppuccin-mocha" -- catppuccin-latte, catppuccin-frappe, catppuccin-macchiato, catppuccin-mocha
 
-  -- Automatically set up your configuration after cloning packer.nvim
-  -- Put this at the end after all plugins
-  if packer_bootstrap then
-    require('packer').sync()
-  end
-end)
+vim.lsp.enable("csharp-language-server")
+
+-- resizing splits
+vim.keymap.set('n', '<A-h>', require('smart-splits').resize_left)
+vim.keymap.set('n', '<A-j>', require('smart-splits').resize_down)
+vim.keymap.set('n', '<A-k>', require('smart-splits').resize_up)
+vim.keymap.set('n', '<A-l>', require('smart-splits').resize_right)
+-- moving between splits
+vim.keymap.set('n', '<C-h>', require('smart-splits').move_cursor_left)
+vim.keymap.set('n', '<C-j>', require('smart-splits').move_cursor_down)
+vim.keymap.set('n', '<C-k>', require('smart-splits').move_cursor_up)
+vim.keymap.set('n', '<C-l>', require('smart-splits').move_cursor_right)
+vim.keymap.set('n', '<C-\\>', require('smart-splits').move_cursor_previous)
+-- swapping buffers between windows
+vim.keymap.set('n', '<leader><leader>h', require('smart-splits').swap_buf_left)
+vim.keymap.set('n', '<leader><leader>j', require('smart-splits').swap_buf_down)
+vim.keymap.set('n', '<leader><leader>k', require('smart-splits').swap_buf_up)
+vim.keymap.set('n', '<leader><leader>l', require('smart-splits').swap_buf_right)
 
 -- }}}
