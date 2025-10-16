@@ -27,7 +27,7 @@ vim.api.nvim_create_autocmd('UIEnter', {
 
 vim.keymap.set(
     {"n"},
-    "<C-e>",
+    "<C-f>",
     ":Oil<enter>"
 )
 

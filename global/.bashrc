@@ -20,6 +20,10 @@ alias mv='/usr/bin/mvg -g'
 
 PS1="\w \$ "
 
+printf "$(whoami)@$(hostname) running at $(tty)\n"
+
+bind -x '"\C-f":vim .'
+
 function mkcd {
   if [ ! -n "$1" ]; then
     echo "Enter a directory name"
