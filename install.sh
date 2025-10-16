@@ -82,7 +82,7 @@ elif [[ $choice == "2" || $choice == "install" ]] then
         mkdir backup 2> /dev/null
         cp -r ~/.config/hypr ./backup
         cp -r ~/.config/wlogout ./backup
-        cp -r ~/.config/wofi ./backup
+        cp -r ~/.config/tofi ./backup
         cp -r ~/.config/waybar ./backup
         cp -r ~/.config/fastfetch ./backup
         cp -r ~/.config/mako ./backup
@@ -93,7 +93,7 @@ elif [[ $choice == "2" || $choice == "install" ]] then
         printf "$(tita)Creating directories...$(tclr)\n"
         mkdir -p ~/.config/hypr \
                  ~/.config/wlogout \
-                 ~/.config/wofi \
+                 ~/.config/tofi \
                  ~/.config/waybar \
                  ~/.config/fastfetch \
                  ~/.config/mako \
@@ -107,7 +107,7 @@ elif [[ $choice == "2" || $choice == "install" ]] then
 
         ln -f ./global/hypr/* ~/.config/hypr/
         ln -f ./global/wlogout/* ~/.config/wlogout/
-        ln -f ./global/wofi/* ~/.config/wofi/
+        ln -f ./global/tofi/config ~/.config/tofi/
         ln -f ./global/waybar/* ~/.config/waybar/
         ln -f ./global/fastfetch/* ~/.config/fastfetch/
         ln -f ./global/mako/* ~/.config/mako/
@@ -130,7 +130,7 @@ elif [[ $choice == "3" || $choice == "remove" || $choice == "rm" ]] then
         
         rm -rf ~/.config/hypr/
         rm -rf ~/.config/wlogout/
-        rm -rf ~/.config/wofi/
+        rm -rf ~/.config/tofi/
         rm -rf ~/.config/waybar/
         rm -rf ~/.config/fastfetch/
         rm -rf ~/.config/mako/
@@ -142,7 +142,7 @@ elif [[ $choice == "3" || $choice == "remove" || $choice == "rm" ]] then
         
         cp -r ./backup/hypr ~/.config/hypr
         cp -r ./backup/wlogout ~/.config/wlogout
-        cp -r ./backup/wofi ~/.config/wofi
+        cp -r ./backup/tofi ~/.config/tofi
         cp -r ./backup/waybar ~/.config/waybar
         cp -r ./backup/fastfetch ~/.config/fastfetch
         cp -r ./backup/mako ~/.config/mako
