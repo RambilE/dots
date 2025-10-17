@@ -6,6 +6,8 @@
     "reload_style_on_change": true,
     "fixed-center": true,
     "modules-left": [
+        "ext/workspaces",
+        "dwl/window",
         "hyprland/workspaces",
         "custom/fullscreen",
         "hyprland/window"
@@ -31,6 +33,10 @@
     ],
     
     // Modules configuration
+    "ext/workspaces": {
+        "on-click": "activate"
+    },
+
     "hyprland/workspaces": {
         "on-scroll-up": "hyprctl dispatch workspace -1",
         "on-scroll-down": "hyprctl dispatch workspace +1",
@@ -108,8 +114,8 @@
         "format-icons": [" ", " ", " ", " ", " "],
         "interval": 5,
         "events": {
-            "on-discharging-warning": "pw-play /usr/share/sounds/ocean/stereo/battery-caution.oga",
-            "on-discharging-critical": "pw-play /usr/share/sounds/ocean/stereo/battery-low.oga"
+            "on-discharging-warning": "pw-play --volume 0.3 /usr/share/sounds/ocean/stereo/battery-caution.oga",
+            "on-discharging-critical": "pw-play --volume 0.3 /usr/share/sounds/ocean/stereo/battery-low.oga"
         }
     },
     "power-profiles-daemon": {
@@ -134,8 +140,8 @@
        "scroll-step": 5,
        "on-click-right": "~/.config/hypr/rambile/dotscripts/wiremix-foot.sh",
        "on-click": "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle",
-       "on-scroll-up": "wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%+; pw-play /usr/share/sounds/ocean/stereo/audio-volume-change.oga",
-       "on-scroll-down": "wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%-; pw-play /usr/share/sounds/ocean/stereo/audio-volume-change.oga",
+       "on-scroll-up": "wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%+; pw-play --volume 0.3 /usr/share/sounds/ocean/stereo/audio-volume-change.oga",
+       "on-scroll-down": "wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%-; pw-play --volume 0.3 /usr/share/sounds/ocean/stereo/audio-volume-change.oga",
     },
     "wireplumber#source": {
        "node-type": "Audio/Source",
