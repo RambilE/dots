@@ -6,8 +6,8 @@
     "reload_style_on_change": true,
     "fixed-center": true,
     "modules-left": [
-        "ext/workspaces",
-        "dwl/window",
+        // "ext/workspaces",
+        // "dwl/window",
         "hyprland/workspaces",
         "custom/fullscreen",
         "hyprland/window"
@@ -33,8 +33,15 @@
     ],
     
     // Modules configuration
+    "dwl/window": {
+          "format": "[{layout}] {title}"
+    },
+
     "ext/workspaces": {
-        "on-click": "activate"
+        "format": "{icon}",
+        "ignore-hidden": true,
+        "on-click": "activate",
+        "sort-by-id": true,
     },
 
     "hyprland/workspaces": {
