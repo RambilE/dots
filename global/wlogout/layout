@@ -1,18 +1,18 @@
 {
     "label" : "suspend",
-    "action" : "pw-play /usr/share/sounds/ocean/stereo/desktop-logout.oga; systemctl suspend",
+    "action" : "systemctl suspend",
     "text" : "Suspend",
     "keybind" : "x"
 }
 {
     "label" : "logout",
-    "action" : "pw-play /usr/share/sounds/ocean/stereo/desktop-logout.oga; hyprctl dispatch exit",
+    "action" : "hyprctl dispatch exit",
     "text" : "Logout",
     "keybind" : "e"
 }
 {
     "label" : "shutdown",
-    "action" : "pw-play /usr/share/sounds/ocean/stereo/desktop-logout.oga; ystemctl poweroff",
+    "action" : "systemctl poweroff",
     "text" : "Shutdown",
     "keybind" : "s"
 }
